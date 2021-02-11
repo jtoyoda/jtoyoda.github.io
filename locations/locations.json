@@ -869,7 +869,7 @@
             },
             {
                 "name": "Sea Shrine",
-                "access_rules": [ "airship,canoe,oxyale", "northernDocks,ship,canal,canoe,oxyale" ],
+                "access_rules": [ "airship,canoe,oxyale", "northernDocks,ship,canal,oxyale" ],
                 "sections": [
                     {
                         "name": "Water Orb",
