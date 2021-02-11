@@ -107,7 +107,7 @@
             },
             {
                 "name": "Dwarf Cave",
-                "access_rules": [ "openProgression", "ship", "canoe,bridge", "airship", "extendedOpen" ],
+                "access_rules": [ "openProgression", "ship", "airship", "extendedOpen" ],
                 "sections": [
                     {
                         "name": "Free Chests",
@@ -142,13 +142,7 @@
             },
             {
                 "name": "North West Castle",
-                "access_rules": [
-                    "openProgression,canoe",
-                    "ship",
-                    "canoe,bridge",
-                    "airship",
-                    "extendedOpen"
-                ],
+                "access_rules": [ "openProgression,canoe", "ship", "airship", "extendedOpen" ],
                 "sections": [
                     {
                         "name": "Astos",
@@ -172,7 +166,13 @@
             },
             {
                 "name": "Matoya's Cave",
-                "access_rules": [ "bridge", "ship", "airship" ],
+                "access_rules": [
+                    "bridge",
+                    "ship",
+                    "airship",
+                    "extendedOpen,canoe",
+                    "openProgression,canoe"
+                ],
                 "sections": [
                     {
                         "name": "Matoya",
@@ -196,7 +196,7 @@
             },
             {
                 "name": "Elf Castle",
-                "access_rules": [ "openProgression,canoe", "ship", "airship", "extendedOpen,bridge" ],
+                "access_rules": [ "openProgression,canoe", "ship", "airship", "extendedOpen" ],
                 "sections": [
                     {
                         "name": "Elf Prince",
@@ -220,7 +220,13 @@
             },
             {
                 "name": "Pravoka",
-                "access_rules": [ "bridge", "ship", "airship" ],
+                "access_rules": [
+                    "bridge",
+                    "ship",
+                    "airship",
+                    "extendedOpen,canoe",
+                    "openProgression,canoe"
+                ],
                 "sections": [
                     {
                         "name": "Bikke",
@@ -239,7 +245,7 @@
             },
             {
                 "name": "Marsh Cave",
-                "access_rules": [ "openProgression,canoe", "ship", "airship", "extendedOpen,bridge" ],
+                "access_rules": [ "openProgression,canoe", "ship", "airship", "extendedOpen" ],
                 "sections": [
                     {
                         "name": "Marsh Incentive",
@@ -334,7 +340,7 @@
             },
             {
                 "name": "Titan's Trove",
-                "access_rules": [ "airship", "ruby,ship,canal" ],
+                "access_rules": [ "ruby,airship", "ruby,ship,canal" ],
                 "sections": [
                     {
                         "name": "Incentive",
@@ -451,7 +457,8 @@
                     "airship",
                     "openProgression,canoe",
                     "ship,canal",
-                    "extendedOpen,canoe"
+                    "extendedOpen,canoe",
+                    "ship,canoe"
                 ],
                 "sections": [
                     {
@@ -524,7 +531,8 @@
                     "airship",
                     "bridge,canoe",
                     "openProgression,canoe",
-                    "extendedOpen,canoe"
+                    "extendedOpen,canoe",
+                    "ship,canoe"
                 ],
                 "sections": [
                     {

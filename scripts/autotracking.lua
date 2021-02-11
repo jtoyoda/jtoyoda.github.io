@@ -33,7 +33,11 @@ function ReadU8(segment, address)
 end
 
 function isInGame()
-  return AutoTracker:ReadU8(0x6102) ~= 0x00 and AutoTracker:ReadU8(0x6102) ~= 0x0B and AutoTracker:ReadU8(0x60FC) ~= 0x0C
+  local A = AutoTracker:ReadU8(0x6102) -- Party Made
+  local B = AutoTracker:ReadU8(0x60FC) -- Not in Battle
+  local C = AutoTracker:ReadU8(0x60A3)
+  return A ~= 0x00 and B ~= 0x0B and B ~= 0x0C and C ~= 0x00 and not (
+    A== 0xF2 and B == 0xF2 and C == 0xF2) 
 end
 
 function updateToggleItemFromByteAndFlag(segment, code, address, flag)
@@ -96,7 +100,7 @@ function updateRuby(segment)
     local item = Tracker:FindObjectForCode("ruby")
     if item then
         local ruby = ReadU8(segment, 0x6029)
-        local titan = AutoTracker:ReadU8(0x6214)
+        local titan = ReadU8(segment, 0x6214)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, ruby, titan, item.CurrentStage)
         end
@@ -120,8 +124,8 @@ function updateSlab(segment)
     local item = Tracker:FindObjectForCode("slab")
     if item then
         local slab = ReadU8(segment, 0x6028)
-        local unne = AutoTracker:ReadU8(0x620B)
-        local lefein = AutoTracker:ReadU8(0x620F)
+        local unne = ReadU8(segment, 0x620B)
+        local lefein = ReadU8(segment, 0x620F)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, slab, unne, item.CurrentStage)
         end
@@ -149,7 +153,7 @@ function updateTail(segment)
     local item = Tracker:FindObjectForCode("tail")
     if item then
         local tail = ReadU8(segment, 0x602D)
-        local bahumat = AutoTracker:ReadU8(0x620E)
+        local bahumat = ReadU8(segment, 0x620E)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, ruby, bahumat, item.CurrentStage)
         end
@@ -173,7 +177,7 @@ function updateBottle(segment)
     local item = Tracker:FindObjectForCode("bottle")
     if item then
         local bottle = ReadU8(segment, 0x602F)
-        local bottlePopped = AutoTracker:ReadU8(0x6213)
+        local bottlePopped = ReadU8(segment, 0x6213)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, bottle, bottlePopped, item.Active)
         end
@@ -192,7 +196,7 @@ function updateAdamant(segment)
     local item = Tracker:FindObjectForCode("adamant")
     if item then
         local adamant = ReadU8(segment, 0x6027)
-        local smith = AutoTracker:ReadU8(0x6209)
+        local smith = ReadU8(segment, 0x6209)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, bottle, bottlePopped, item.Active)
         end
@@ -211,7 +215,7 @@ function updateCrystal(segment)
     local item = Tracker:FindObjectForCode("crystal")
     if item then
         local crystal = ReadU8(segment, 0x6023)
-        local matoya = AutoTracker:ReadU8(0x620A)
+        local matoya = ReadU8(segment, 0x620A)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, crystal, matoya, item.Active)
         end
@@ -230,7 +234,7 @@ function updateHerb(segment)
     local item = Tracker:FindObjectForCode("herb")
     if item then
         local herb = ReadU8(segment, 0x6024)
-        local elfPrince = AutoTracker:ReadU8(0x6205)
+        local elfPrince = ReadU8(segment, 0x6205)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, herb, elfPrince, item.Active)
         end
@@ -249,7 +253,7 @@ function updateTNT(segment)
     local item = Tracker:FindObjectForCode("tnt")
     if item then
         local tnt = ReadU8(segment, 0x6026)
-        local nerrick = AutoTracker:ReadU8(0x6208)
+        local nerrick = ReadU8(segment, 0x6208)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, tnt, nerrick, item.Active)
         end
@@ -489,5 +493,5 @@ function updateLocationsFromMemorySegmentCorridor(segment)
     end
 end
 
-ScriptHost:AddMemoryWatch("FFR Key Item Data", 0x6000, 0x35, updateItemsFromMemorySegment)
+ScriptHost:AddMemoryWatch("FFR Key Item Data", 0x6000, 0x300, updateItemsFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFR Location Data", 0x6200, 0x100, updateLocationsFromMemorySegmentCorridor)

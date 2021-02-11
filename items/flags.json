@@ -11,11 +11,11 @@
         "stages": [
             {
                 "img": "images/openProgression.png",
-                "codes": "innerSeaProgression,openProgression"
+                "codes": "openProgression"
             },
             {
                 "img": "images/extendedOpen.png",
-                "codes": "innerSeaProgression,extendedOpen"
+                "codes": "extendedOpen"
             }
         ]
     }
