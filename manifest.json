@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "Final Fantasy 1 Randomizer",
     "game_name": "Final Fantasy",
     "game_variant": "Entroper (V4.0.0)",
@@ -6,7 +6,7 @@
     "package_version": "1.0",
     "package_uid": "ff1_rando_jat",
     "author": "jat2980",
-    "link": "https://jtoyoda.github.io/ffr-emotracker/ffr_rando_jat.zip",
+    "link": "https://github.com/jtoyoda/ffr-emotracker/raw/main/ff1_rando_jat.zip",
     "variants": {
       "standard": {
         "display_name": "Standard Map Tracker"
