@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Northern Docks",
+        "type": "toggle",
+        "img": "images/northernDocks.png",
+        "codes": "northernDocks"
+    },
+    {
+        "name": "Open Progression",
+        "type": "progressive_toggle",
+        "stages": [
+            {
+                "img": "images/openProgression.png",
+                "codes": "innerSeaProgression,openProgression"
+            },
+            {
+                "img": "images/extendedOpen.png",
+                "codes": "innerSeaProgression,extendedOpen"
+            }
+        ]
+    }
+]
