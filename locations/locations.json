@@ -79,7 +79,7 @@
             },
             {
                 "name": "Temple of Fiends Revisited",
-                "access_rules": [ "earthorb,fireorb,waterorb,airorb,lute,key"],
+                "access_rules": [ "earthorb,fireorb,waterorb,airorb,lute,key" ],
                 "sections": [
                     {
                         "name": "Lute Plate Room",
@@ -206,7 +206,7 @@
                     },
                     {
                         "name": "Chests",
-                        "access_rules": ["key"],
+                        "access_rules": [ "key" ],
                         "item_count": 4
                     }
                 ],
@@ -403,12 +403,12 @@
                     },
                     {
                         "name": "4 Armory",
-                        "access_rules": [],
+                        "access_rules": [ "rod" ],
                         "item_count": 5
                     },
                     {
                         "name": "4 Bottom",
-                        "access_rules": [],
+                        "access_rules": [ "rod" ],
                         "item_count": 3
                     }
                 ],
