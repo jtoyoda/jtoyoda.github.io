@@ -480,6 +480,7 @@
                 "name": "Ice Cave",
                 "access_rules": [
                     "airship",
+                    "ship,canoe",
                     "bridge,canoe",
                     "openProgression,canoe",
                     "extendedOpen,canoe"
