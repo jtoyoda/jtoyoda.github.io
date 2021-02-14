@@ -1,39 +1,4 @@
 {
-    "shared_item_grid": {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "item_margin": "1,2",
-        "rows": [
-            [ "earthorb", "fireorb", "waterorb", "airorb" ],
-            [ "lute", "key", "rod", "oxyale", "chime", "cube" ],
-            [ "bridge", "ship", "canal", "canoe", "floater" ],
-            [ "adamant", "tnt", "crown", "crystal", "herb" ],
-            [ "garland", "ruby", "tail", "slab", "bottle" ]
-        ]
-    },
-    "shared_locations_grid": {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "v_alignment": "center",
-        "item_margin": "1,2",
-        "rows": [
-            [ "king", "sara", "bikke", "nerrick", "smith" ],
-            [ "astos", "sarda", "sages", "matoya", "elfprince" ],
-            [ "marsh", "marshLocked", "fairy", "lefein", "coneriaLocked" ],
-            [ "robot", "iceCave", "ordeals", "titansTrove" ],
-            [ "earth", "volcano", "sea", "sky" ]
-        ]
-    },
-    "shared_flags_grid": {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "v_alignment": "center",
-        "item_margin": "1,2",
-        "rows": [
-            [ "northernDocks" ],
-            [ "extendedOpen" ]
-        ]
-    },
     "tracker_capture_item": {
         "type": "container",
         "content": {
@@ -85,7 +50,7 @@
                             "dock": "top",
                             "content": {
                                 "type": "layout",
-                                "key": "shared_flags_grid"
+                                "key": "shared_flags_grid_horizontal"
                             }
                         },
                         {
@@ -161,7 +126,7 @@
                                 "type": "layout",
                                 "h_alignment": "center",
                                 "v_alignment": "center",
-                                "key": "shared_flags_grid"
+                                "key": "shared_flags_grid_vertical"
                             }
                         },
                         {
@@ -186,6 +151,13 @@
                             "content": {
                                 "type": "map",
                                 "maps": [ "overworld" ]
+                            }
+                        },
+                        {
+                            "title": "Incentive Locations",
+                            "content": {
+                                "type": "map",
+                                "maps": [ "incentives" ]
                             }
                         }
                     ]

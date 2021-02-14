@@ -138,5 +138,11 @@
         "type": "toggle",
         "img": "images/seaShrine.png",
         "codes": "sea"
+    },
+    {
+        "name": "Chaos",
+        "type": "toggle",
+        "img": "images/chaos.png",
+        "codes": "chaos"
     }
 ]

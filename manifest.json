@@ -5,11 +5,14 @@
     "platform": "nes",
     "package_version": "1.0",
     "package_uid": "ff1_rando_jat",
-    "author": "jat2980",
+    "author": "jat2980, DarkmoonEX",
     "link": "https://github.com/jtoyoda/ffr-emotracker/raw/main/ff1_rando_jat.zip",
     "variants": {
-      "standard": {
-        "display_name": "Standard Map Tracker"
-      }
+        "standard": {
+            "display_name": "Standard Map Tracker"
+        },
+        "shardHunt": {
+            "display_name": "Shard Hunt Map Tracker"
+        }
     }
 }

@@ -36,7 +36,7 @@ function isInGame()
   local A = AutoTracker:ReadU8(0x6102) -- Party Made
   local B = AutoTracker:ReadU8(0x60FC) -- Not in Battle
   local C = AutoTracker:ReadU8(0x60A3)
-  return A ~= 0x00 and B ~= 0x0B and B ~= 0x0C and C ~= 0x00 and not (
+  return A ~= 0x00 and B ~= 0x0B and B ~= 0x0C and not (
     A== 0xF2 and B == 0xF2 and C == 0xF2) 
 end
 
@@ -84,14 +84,11 @@ function updateFloater(segment)
         end
 
         if airship > 0 then
-            item.CurrentStage = 1
-            item.Active = true
+            item.CurrentStage = 2
         elseif floater > 0 then
-            item.CurrentStage = 0
-            item.Active = true
+            item.CurrentStage = 1
         else
           item.CurrentStage = 0
-          item.Active = false
         end
     end
 end 
@@ -106,14 +103,11 @@ function updateRuby(segment)
         end
 
         if ruby > 0 then
-            item.CurrentStage = 0
-            item.Active = true
-        elseif titan & 0x01 == 0 then
             item.CurrentStage = 1
-            item.Active = true
+        elseif titan & 0x01 == 0 then
+            item.CurrentStage = 2
         else
           item.CurrentStage = 0
-          item.Active = false
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
         print("Couldn't find ruby")
@@ -132,17 +126,13 @@ function updateSlab(segment)
 
 
         if lefein & 0x02 ~= 0 then
-          item.CurrentStage = 2
-          item.Active = true
+          item.CurrentStage = 3
         elseif unne & 0x02 ~= 0 then
-          item.CurrentStage = 1
-          item.Active = true
+          item.CurrentStage = 2
         elseif slab > 0 then
-          item.CurrentStage = 0
-          item.Active = true
+          item.CurrentStage = 1
         else
           item.CurrentStage = 0
-          item.Active = false
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
         print("Couldn't find slab")
@@ -159,14 +149,11 @@ function updateTail(segment)
         end
 
         if tail > 0 then
-            item.CurrentStage = 0
-            item.Active = true
-        elseif bahumat & 0x02 ~= 0 then
             item.CurrentStage = 1
-            item.Active = true
+        elseif bahumat & 0x02 ~= 0 then
+            item.CurrentStage = 2
         else
           item.CurrentStage = 0
-          item.Active = false
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
         print("Couldn't find tail")
@@ -182,10 +169,12 @@ function updateBottle(segment)
             print(item.Name, bottle, bottlePopped, item.Active)
         end
 
-        if bottle > 0 or bottlePopped & 0x03 > 0 then
-            item.Active = true
+        if bottlePopped & 0x03 > 0 then
+            item.CurrentStage = 2
+        elseif bottle > 0 then 
+            item.CurrentStage = 1
         else
-          item.Active = false
+            item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
         print("Couldn't find bottle")
@@ -328,6 +317,28 @@ function updateSectionMultipleChestCountFromByteAndFlag(segment, locationRef, ad
     end
 end
 
+function updateShardsFromMemorySegment(segment)
+    if not isInGame() then
+        return false
+    end
+    
+    InvalidateReadCaches()
+    if AUTOTRACKER_ENABLE_ITEM_TRACKING then
+        local shardCount = ReadU8(segment, 0x6035)
+        local shardCountItem = Tracker:FindObjectForCode("shards")
+        local shardCountMax = Tracker:FindObjectForCode("shardsRequired")
+        local goalShardCount = shardCountMax.CurrentStage + 16
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+          print("Shard Count:", shardCount, " Goal Count: ", goalShardCount)
+        end
+        if shardCount >= goalShardCount then
+          shardCountItem.CurrentStage = goalShardCount
+        else 
+          shardCountItem.CurrentStage = shardCount
+        end
+    end
+end
+
 function updateItemsFromMemorySegment(segment)
     if not isInGame() then
         return false
@@ -395,8 +406,6 @@ function updateLocationsFromMemorySegmentCorridor(segment)
       updateToggleItemFromByteAndFlag(segment, "astos", 0x6207, 0x02)
       updateToggleItemFromByteAndFlag(segment, "elfprince", 0x6206, 0x02)
       updateToggleItemFromByteAndFlag(segment, "matoya", 0x620A, 0x02)
-      updateSectionSingleChestCountFromByteAndFlag(segment, "@Bahamut's Cave/Bahamut", 0x620E, 0x02)
-      updateSectionSingleChestCountFromByteAndFlag(segment, "@Melmond/Dr Unne", 0x620B, 0x02)
     end
 
     if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
@@ -495,3 +504,7 @@ end
 
 ScriptHost:AddMemoryWatch("FFR Key Item Data", 0x6000, 0x300, updateItemsFromMemorySegment)
 ScriptHost:AddMemoryWatch("FFR Location Data", 0x6200, 0x100, updateLocationsFromMemorySegmentCorridor)
+if Tracker.ActiveVariantUID == "shardHunt" then
+    ScriptHost:AddMemoryWatch("FFR Shard Data", 0x6034, 0x02, updateShardsFromMemorySegment)
+end
+

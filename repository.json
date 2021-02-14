@@ -3,7 +3,7 @@
     "packages": [
         {
             "name": "Final Fantasy 1 Randomizer",
-            "author": "jat2980",
+            "author": "jat2980, DarkmoonEX",
             "game_name": "Final Fantasy",
             "flags": [
                 "map",
@@ -17,6 +17,15 @@
             "variants": [
                 {
                     "name": "Standard Map Tracker",
+                    "flags": [
+                        "map",
+                        "pins",
+                        "chathud",
+                        "autotracker"
+                    ]
+                },
+                {
+                    "name": "Shard Hunt Map Tracker",
                     "flags": [
                         "map",
                         "pins",

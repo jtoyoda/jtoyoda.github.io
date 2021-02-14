@@ -44,6 +44,11 @@
                 "access_rules": [],
                 "sections": [
                     {
+                        "name": "Garland",
+                        "access_rules": [],
+                        "hosted_item": "garland"
+                    },
+                    {
                         "name": "Top Left",
                         "access_rules": [],
                         "item_count": 2
@@ -62,11 +67,6 @@
                         "name": "Bottom Right",
                         "access_rules": [ "key" ],
                         "item_count": 1
-                    },
-                    {
-                        "name": "Garland",
-                        "access_rules": [],
-                        "hosted_item": "garland"
                     }
                 ],
                 "map_locations": [
@@ -79,29 +79,39 @@
             },
             {
                 "name": "Temple of Fiends Revisited",
-                "access_rules": [ "earthorb,fireorb,waterorb,airorb,lute,key" ],
-                "sections": [
+                "color": "#808080",
+                "children": [
                     {
-                        "name": "Lute Plate Room",
-                        "access_rules": [],
-                        "item_count": 2
-                    },
-                    {
-                        "name": "Kary Floor",
-                        "access_rules": [],
-                        "item_count": 4
-                    },
-                    {
-                        "name": "Vanilla Masa",
-                        "access_rules": [],
-                        "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "overworld",
-                        "x": 1540,
-                        "y": 1220
+                        "name": "ToFR",
+                        "access_rules": [ "$canBreakOrb,lute,key" ],
+                        "sections": [
+                            {
+                                "name": "Chaos",
+                                "hosted_item": "chaos"
+                            },
+                            {
+                                "name": "Lute Plate Room",
+                                "access_rules": [],
+                                "item_count": 2
+                            },
+                            {
+                                "name": "Kary Floor",
+                                "access_rules": [],
+                                "item_count": 4
+                            },
+                            {
+                                "name": "Vanilla Masa",
+                                "access_rules": [],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "overworld",
+                                "x": 1540,
+                                "y": 1220
+                            }
+                        ]
                     }
                 ]
             },
@@ -428,13 +438,11 @@
             },
             {
                 "name": "Melmond",
-                "access_rules": [ "slab" ],
+                "access_rules": [ "ship,canal,slab", "airship,slab" ],
                 "sections": [
                     {
                         "name": "Dr Unne",
-                        "access_rules": [],
-                        "item_count": 1,
-                        "hosted_item": "slab"
+                        "hosted_item": "slabTranslated"
                     }
                 ],
                 "map_locations": [
@@ -605,6 +613,24 @@
                         "y": 2280
                     }
                 ]
+            },
+            {
+                "name": "Ryukahn Desert",
+                "access_rules": [ "canoe,openProgression", "ship,canoe", "canoe,extendedOpen" ],
+                "sections": [
+                    {
+                        "name": "Floater Turn In",
+                        "access_rules": [ "inactiveFloater" ],
+                        "hosted_item": "airship"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "overworld",
+                        "x": 2650,
+                        "y": 2700
+                    }
+                ]
             }
         ]
     },
@@ -619,7 +645,6 @@
                     {
                         "name": "Bahamut",
                         "access_rules": [ "tail" ],
-                        "item_count": 1,
                         "hosted_item": "bahamut"
                     }
                 ],

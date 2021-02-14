@@ -79,7 +79,7 @@
     },
     {
         "name": "Floater",
-        "type": "progressive_toggle",
+        "type": "progressive",
         "stages": [
             {
                 "img": "images/floater.png",
@@ -111,7 +111,7 @@
     },
     {
         "name": "Ruby",
-        "type": "progressive_toggle",
+        "type": "progressive",
         "stages": [
             {
                 "img": "images/ruby.png",
@@ -125,7 +125,7 @@
     },
     {
         "name": "Tail",
-        "type": "progressive_toggle",
+        "type": "progressive",
         "stages": [
             {
                 "img": "images/tail.png",
@@ -139,7 +139,7 @@
     },
     {
         "name": "Slab",
-        "type": "progressive_toggle",
+        "type": "progressive",
         "stages": [
             {
                 "img": "images/slab.png",
@@ -157,7 +157,7 @@
     },
     {
         "name": "Bottle",
-        "type": "progressive_toggle",
+        "type": "progressive",
         "stages": [
             {
                 "img": "images/bottle.png",
