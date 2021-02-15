@@ -14,6 +14,7 @@
             "version": "1.0.0.0",
             "uid": "ff1_rando_jat",
             "link": "https://jtoyoda.github.io/ff1_rando_jat.zip",
+            "required_app_version": "2.3.0.0",
             "variants": [
                 {
                     "name": "Standard Map Tracker",

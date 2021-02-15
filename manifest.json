@@ -6,7 +6,6 @@
     "package_version": "1.0.0.0",
     "package_uid": "ff1_rando_jat",
     "author": "jat2980, DarkmoonEX",
-    "link": "https://jtoyoda.github.io/ff1_rando_jat.zip",
     "variants": {
         "standard": {
             "display_name": "Standard Map Tracker"
