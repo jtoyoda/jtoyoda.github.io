@@ -107,6 +107,13 @@
                                 "type": "map",
                                 "maps": [ "overworld" ]
                             }
+                        },
+                        {
+                            "title": "Incentive Locations",
+                            "content": {
+                                "type": "map",
+                                "maps": [ "incentives" ]
+                            }
                         }
                     ]
                 }

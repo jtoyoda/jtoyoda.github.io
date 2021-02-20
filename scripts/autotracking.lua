@@ -52,7 +52,7 @@ function updateToggleItemFromByteAndFlag(segment, code, address, flag)
 
         if flagTest ~= 0 then
             item.Active = true
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
             item.Active = false
         end
     end
@@ -68,7 +68,7 @@ function updateCanal(segment)
 
         if value == 0 then
             item.Active = true
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
             item.Active = false
         end
     end
@@ -87,7 +87,7 @@ function updateFloater(segment)
             item.CurrentStage = 2
         elseif floater > 0 then
             item.CurrentStage = 1
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.CurrentStage = 0
         end
     end
@@ -106,7 +106,7 @@ function updateRuby(segment)
             item.CurrentStage = 1
         elseif titan & 0x01 == 0 then
             item.CurrentStage = 2
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
@@ -131,7 +131,7 @@ function updateSlab(segment)
           item.CurrentStage = 2
         elseif slab > 0 then
           item.CurrentStage = 1
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
@@ -152,7 +152,7 @@ function updateTail(segment)
             item.CurrentStage = 1
         elseif bahumat & 0x02 ~= 0 then
             item.CurrentStage = 2
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
@@ -173,7 +173,7 @@ function updateBottle(segment)
             item.CurrentStage = 2
         elseif bottle > 0 then 
             item.CurrentStage = 1
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
             item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
@@ -192,7 +192,7 @@ function updateAdamant(segment)
 
         if adamant > 0 or smith & 0x02 > 0 then
             item.Active = true
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.Active = false
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
@@ -211,7 +211,7 @@ function updateCrystal(segment)
 
         if crystal > 0 or matoya & 0x02 > 0 then
             item.Active = true
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.Active = false
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
@@ -230,7 +230,7 @@ function updateHerb(segment)
 
         if herb > 0 or elfPrince & 0x02 > 0 then
             item.Active = true
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.Active = false
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
@@ -249,7 +249,7 @@ function updateTNT(segment)
 
         if tnt > 0 or nerrick & 0x02 > 0 then
             item.Active = true
-        else
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.Active = false
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
