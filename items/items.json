@@ -19,15 +19,31 @@
     },
     {
         "name": "Adamant",
-        "type": "toggle",
-        "img": "images/adamant.png",
-        "codes": "adamant"
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/adamant.png",
+                "codes": "adamant"
+            },
+            {
+                "img": "images/adamant-done.png",
+                "codes": "adamant,adamantDone"
+            }
+        ]
     },
     {
         "name": "TNT",
-        "type": "toggle",
-        "img": "images/tnt.png",
-        "codes": "tnt"
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/tnt.png",
+                "codes": "tnt"
+            },
+            {
+                "img": "images/tnt-done.png",
+                "codes": "tnt,tntDone"
+            }
+        ]
     },
     {
         "name": "Rod",
@@ -68,7 +84,7 @@
     {
         "name": "Canal",
         "type": "toggle",
-        "img": "images/canal.png",
+        "img": "images/canal-yes.png",
         "codes": "canal"
     },
     {
@@ -93,21 +109,45 @@
     },
     {
         "name": "Crown",
-        "type": "toggle",
-        "img": "images/crown.png",
-        "codes": "crown"
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/crown.png",
+                "codes": "crown"
+            },
+            {
+                "img": "images/crown-done.png",
+                "codes": "crown,crownDone"
+            }
+        ]
     },
     {
         "name": "Crystal",
-        "type": "toggle",
-        "img": "images/crystal.png",
-        "codes": "crystal"
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/crystal.png",
+                "codes": "crystal"
+            },
+            {
+                "img": "images/crystal-done.png",
+                "codes": "crystal,crystalDone"
+            }
+        ]
     },
     {
         "name": "Herb",
-        "type": "toggle",
-        "img": "images/herb.png",
-        "codes": "herb"
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/herb.png",
+                "codes": "herb"
+            },
+            {
+                "img": "images/herb-done.png",
+                "codes": "herb,herbDone"
+            }
+        ]
     },
     {
         "name": "Ruby",
@@ -118,7 +158,7 @@
                 "codes": "ruby"
             },
             {
-                "img": "images/rubyDone.png",
+                "img": "images/ruby-done.png",
                 "codes": "ruby,titan"
             }
         ]
@@ -132,7 +172,7 @@
                 "codes": "tail"
             },
             {
-                "img": "images/tail_2.png",
+                "img": "images/tail-done.png",
                 "codes": "tail,bahamut"
             }
         ]
@@ -142,15 +182,15 @@
         "type": "progressive",
         "stages": [
             {
-                "img": "images/slab.png",
+                "img": "images/slab-found.png",
                 "codes": "slab"
             },
             {
-                "img": "images/slabTranslated.png",
+                "img": "images/slab-translated.png",
                 "codes": "slab,slabTranslated,unne"
             },
             {
-                "img": "images/slabDone.png",
+                "img": "images/slab-translated-done.png",
                 "codes": "slab,slabDone,slabTurnIn"
             }
         ]
@@ -164,33 +204,69 @@
                 "codes": "bottle"
             },
             {
-                "img": "images/bottle.png",
+                "img": "images/bottle-done.png",
                 "codes": "bottle,bottlepopped"
             }
         ]
     },
     {
         "name": "Earth Orb",
-        "type": "toggle",
-        "img": "images/earthorb.png",
-        "codes": "earthorb"
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/orb-earth-no.png",
+                "codes": "earthorb"
+            },
+            {
+                "img": "images/orb-earth-yes.png",
+                "codes": "earthorb,earthorblit"
+            }
+        ]
     },
     {
         "name": "Fire Orb",
-        "type": "toggle",
-        "img": "images/fireorb.png",
-        "codes": "fireorb"
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/orb-fire-no.png",
+                "codes": "fireorb"
+            },
+            {
+                "img": "images/orb-fire-yes.png",
+                "codes": "fireorb,fireorblit"
+            }
+        ]
     },
     {
         "name": "Water Orb",
-        "type": "toggle",
-        "img": "images/waterorb.png",
-        "codes": "waterorb"
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/orb-water-no.png",
+                "codes": "waterorb"
+            },
+            {
+                "img": "images/orb-water-yes.png",
+                "codes": "waterorb,waterorblit"
+            }
+        ]
     },
     {
         "name": "Air Orb",
-        "type": "toggle",
-        "img": "images/airorb.png",
-        "codes": "airorb"
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/orb-air-no.png",
+                "codes": "airorb"
+            },
+            {
+                "img": "images/orb-air-yes.png",
+                "codes": "airorb,airorblit"
+            }
+        ]
     }
 ]

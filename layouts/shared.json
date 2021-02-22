@@ -20,7 +20,7 @@
             [ "king", "sara", "bikke", "nerrick", "smith" ],
             [ "astos", "sarda", "sages", "matoya", "elfprince" ],
             [ "marsh", "marshLocked", "fairy", "lefein", "coneriaLocked" ],
-            [ "robot", "iceCave", "ordeals", "titansTrove" ],
+            [ "robot", "iceCave", "ordeals", "titansTrove", "shopItem" ],
             [ "earth", "volcano", "sea", "sky" ]
         ]
     },

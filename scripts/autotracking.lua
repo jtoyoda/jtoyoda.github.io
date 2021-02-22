@@ -58,6 +58,24 @@ function updateToggleItemFromByteAndFlag(segment, code, address, flag)
     end
 end
 
+function updateOrbFromByteAndFlag(segment, code, address, flag)
+    local item = Tracker:FindObjectForCode(code)
+    if item then
+        local value = ReadU8(segment, address)
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+            print(item.Name, code, flag, value)
+        end
+
+        local flagTest = value & flag
+
+        if flagTest ~= 0 then
+            item.CurrentStage = 1
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
+            item.CurrentStage = 0
+        end
+    end
+end
+
 function updateCanal(segment)
     local item = Tracker:FindObjectForCode("canal")
     if item then
@@ -166,12 +184,12 @@ function updateBottle(segment)
         local bottle = ReadU8(segment, 0x602F)
         local bottlePopped = ReadU8(segment, 0x6213)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-            print(item.Name, bottle, bottlePopped, item.Active)
+            print(item.Name, bottle, bottlePopped)
         end
 
-        if bottlePopped & 0x03 > 0 then
+        if bottlePopped & 0x02 > 0 then
             item.CurrentStage = 2
-        elseif bottle > 0 then 
+        elseif bottle > 0 or bottlePopped & 0x01 > 0 then 
             item.CurrentStage = 1
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
             item.CurrentStage = 0
@@ -181,19 +199,42 @@ function updateBottle(segment)
     end
 end
 
+function updateCrown(segment)
+    local item = Tracker:FindObjectForCode("crown")
+    if item then
+        local crown = ReadU8(segment, 0x6022)
+        local astos = ReadU8(segment, 0x6207)
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+            print(item.Name, crown, astos)
+        end
+
+        if astos & 0x02 > 0 then 
+            item.CurrentStage = 2
+        elseif crown > 0 then
+            item.CurrentStage = 1
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
+            item.CurrentStage = 0
+        end
+    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+        print("Couldn't find adamant")
+    end
+end
+
 function updateAdamant(segment)
     local item = Tracker:FindObjectForCode("adamant")
     if item then
         local adamant = ReadU8(segment, 0x6027)
         local smith = ReadU8(segment, 0x6209)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-            print(item.Name, bottle, bottlePopped, item.Active)
+            print(item.Name, adamant, smith)
         end
 
-        if adamant > 0 or smith & 0x02 > 0 then
-            item.Active = true
+        if smith & 0x02 > 0 then 
+            item.CurrentStage = 2
+        elseif adamant > 0 then
+            item.CurrentStage = 1
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
-          item.Active = false
+            item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
         print("Couldn't find adamant")
@@ -206,13 +247,14 @@ function updateCrystal(segment)
         local crystal = ReadU8(segment, 0x6023)
         local matoya = ReadU8(segment, 0x620A)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-            print(item.Name, crystal, matoya, item.Active)
+            print(item.Name, crystal, matoya)
         end
-
-        if crystal > 0 or matoya & 0x02 > 0 then
-            item.Active = true
+        if matoya & 0x02 > 0 then
+            item.CurrentStage = 2
+        elseif crystal > 0 then
+            item.CurrentStage = 1
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
-          item.Active = false
+            item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
         print("Couldn't find crystal")
@@ -225,13 +267,14 @@ function updateHerb(segment)
         local herb = ReadU8(segment, 0x6024)
         local elfPrince = ReadU8(segment, 0x6205)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-            print(item.Name, herb, elfPrince, item.Active)
+            print(item.Name, herb, elfPrince)
         end
-
-        if herb > 0 or elfPrince & 0x02 > 0 then
-            item.Active = true
+        if elfPrince & 0x02 > 0 then
+            item.CurrentStage = 2
+        elseif herb > 0 then
+            item.CurrentStage = 1
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
-          item.Active = false
+            item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
         print("Couldn't find herb")
@@ -244,13 +287,14 @@ function updateTNT(segment)
         local tnt = ReadU8(segment, 0x6026)
         local nerrick = ReadU8(segment, 0x6208)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-            print(item.Name, tnt, nerrick, item.Active)
+            print(item.Name, tnt, nerrick)
         end
-
-        if tnt > 0 or nerrick & 0x02 > 0 then
-            item.Active = true
+        if nerrick & 0x02 > 0 then
+            item.CurrentStage = 2
+        elseif tnt > 0 then
+            item.CurrentStage = 1
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
-          item.Active = false
+            item.CurrentStage = 0
         end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING then
         print("Couldn't find tnt")
@@ -348,7 +392,6 @@ function updateItemsFromMemorySegment(segment)
 
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then
         updateToggleItemFromByteAndFlag(segment, "lute", 0x6021, 0xFF)
-        updateToggleItemFromByteAndFlag(segment, "crown", 0x6022, 0xFF)
         updateToggleItemFromByteAndFlag(segment, "key", 0x6025, 0xFF)
         updateToggleItemFromByteAndFlag(segment, "rod", 0x602A, 0xFF)
         updateToggleItemFromByteAndFlag(segment, "chime", 0x602C, 0xFF)
@@ -357,10 +400,11 @@ function updateItemsFromMemorySegment(segment)
         updateToggleItemFromByteAndFlag(segment, "ship", 0x6000, 0xFF)
         updateToggleItemFromByteAndFlag(segment, "canoe", 0x6012 , 0xFF)
         updateToggleItemFromByteAndFlag(segment, "bridge", 0x6008 , 0xFF)
-        updateToggleItemFromByteAndFlag(segment, "fireorb", 0x6032 , 0xFF)
-        updateToggleItemFromByteAndFlag(segment, "waterorb", 0x6033 , 0xFF)
-        updateToggleItemFromByteAndFlag(segment, "airorb", 0x6034 , 0xFF)
-        updateToggleItemFromByteAndFlag(segment, "earthorb", 0x6031 , 0xFF)
+        updateOrbFromByteAndFlag(segment, "fireorb", 0x6032 , 0xFF)
+        updateOrbFromByteAndFlag(segment, "waterorb", 0x6033 , 0xFF)
+        updateOrbFromByteAndFlag(segment, "airorb", 0x6034 , 0xFF)
+        updateOrbFromByteAndFlag(segment, "earthorb", 0x6031 , 0xFF)
+        updateCrown(segment)
         updateAdamant(segment)
         updateCrystal(segment)
         updateHerb(segment)
@@ -496,9 +540,9 @@ function updateLocationsFromMemorySegmentCorridor(segment)
         updateSectionSingleChestCountFromByteAndFlag(segment, "@Sea Shrine/Sea Incentive", 0x62B4, 0x04)
         updateSectionMultipleChestCountFromByteAndFlag(segment, "@Sea Shrine/Sea Hallway", { [0x62A1] = 0x04, [0x62A2] = 0x04 })
         updateSectionMultipleChestCountFromByteAndFlag(segment, "@Sea Shrine/Sharknado", { [0x6295] = 0x04, [0x6296] = 0x04, [0x6297] = 0x04, [0x6298] = 0x04, [0x6299] = 0x04, [0x629A] = 0x04, [0x629B] = 0x04, [0x629C] = 0x04, [0x629D] = 0x04, [0x629E] = 0x04 })
-        updateSectionMultipleChestCountFromByteAndFlag(segment, "@Temple of Fiends Revisited/Lute Plate Room", { [0x62FD] = 0x04, [0x62FE] = 0x04 })
-        updateSectionMultipleChestCountFromByteAndFlag(segment, "@Temple of Fiends Revisited/Kary Floor", { [0x62F9] = 0x04, [0x62FA] = 0x04, [0x62FB] = 0x04, [0x62FC] = 0x04 })
-        updateSectionSingleChestCountFromByteAndFlag(segment, "@Temple of Fiends Revisited/Vanilla Masa", 0x62F8, 0x04)
+        updateSectionMultipleChestCountFromByteAndFlag(segment, "@ToFR/Lute Plate Room", { [0x62FD] = 0x04, [0x62FE] = 0x04 })
+        updateSectionMultipleChestCountFromByteAndFlag(segment, "@ToFR/Kary Floor", { [0x62F9] = 0x04, [0x62FA] = 0x04, [0x62FB] = 0x04, [0x62FC] = 0x04 })
+        updateSectionSingleChestCountFromByteAndFlag(segment, "@ToFR/Vanilla Masa", 0x62F8, 0x04)
     end
 end
 

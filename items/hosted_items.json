@@ -116,6 +116,12 @@
         "codes": "titansTrove"
     },
     {
+        "name": "Shop Item",
+        "type": "toggle",
+        "img": "images/gil_shop_item.png",
+        "codes": "shopItem"
+    },
+    {
         "name": "Earth",
         "type": "toggle",
         "img": "images/earth.png",

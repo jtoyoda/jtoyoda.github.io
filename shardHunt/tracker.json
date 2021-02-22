@@ -38,7 +38,7 @@
     },
     "tracker_default": {
         "type": "container",
-        "background": "#002d71",
+        "background": "#5f6393",
         "content": {
             "type": "dock",
             "dropshadow": false,
@@ -122,7 +122,7 @@
     },
     "tracker_horizontal": {
         "type": "container",
-        "background": "#002d71",
+        "background": "#5f6393",
         "content": {
             "type": "dock",
             "dropshadow": false,

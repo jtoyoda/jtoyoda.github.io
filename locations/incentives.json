@@ -251,7 +251,7 @@
                     {
                         "name": "I: Earth Orb",
                         "access_rules": [ "rod" ],
-                        "hosted_item": "earthorb"
+                        "hosted_item": "earthorblit"
                     },
                     {
                         "name": "I: Earth Incentive",
@@ -351,7 +351,7 @@
                     {
                         "name": "I: Fire Orb",
                         "access_rules": [],
-                        "hosted_item": "fireorb"
+                        "hosted_item": "fireorblit"
                     },
                     {
                         "name": "I: Volcano Incentive",
@@ -482,7 +482,7 @@
                     {
                         "name": "I: Air Orb",
                         "access_rules": [],
-                        "hosted_item": "airorb"
+                        "hosted_item": "airorblit"
                     },
                     {
                         "name": "I: Sky Incentive",
@@ -529,7 +529,7 @@
                     {
                         "name": "I: Water Orb",
                         "access_rules": [],
-                        "hosted_item": "waterorb"
+                        "hosted_item": "waterorblit"
                     },
                     {
                         "name": "I: Sea Incentive",
