@@ -17,15 +17,19 @@ Tracker:AddLocations("locations/incentives.json")
 
 Tracker:AddLayouts("layouts/shared.json")
 if Tracker.ActiveVariantUID == "shardHunt" then
+  Tracker.AllowResize = true
   Tracker:AddLayouts("shardHunt/tracker.json")
   Tracker:AddLayouts("shardHunt/broadcast.json")
 elseif Tracker.ActiveVariantUID == "shardHuntNoMap" then
+  Tracker.AllowResize = false
   Tracker:AddLayouts("shardHuntNoMap/tracker.json")
   Tracker:AddLayouts("shardHunt/broadcast.json")
 elseif Tracker.ActiveVariantUID == "standardNoMap" then
+  Tracker.AllowResize = false
   Tracker:AddLayouts("standardNoMap/tracker.json")
   Tracker:AddLayouts("layouts/standard_broadcast.json")
 else
+  Tracker.AllowResize = true
   Tracker:AddLayouts("layouts/tracker.json")
   Tracker:AddLayouts("layouts/standard_broadcast.json")
 end
