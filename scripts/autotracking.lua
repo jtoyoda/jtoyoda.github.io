@@ -32,12 +32,11 @@ function ReadU8(segment, address)
     return U8_READ_CACHE
 end
 
-function isInGame()
-  local A = AutoTracker:ReadU8(0x6102) -- Party Made
-  local B = AutoTracker:ReadU8(0x60FC) -- Not in Battle
-  local C = AutoTracker:ReadU8(0x60A3)
-  return A ~= 0x00 and B ~= 0x0B and B ~= 0x0C and not (
-    A== 0xF2 and B == 0xF2 and C == 0xF2) 
+function isInGame(segment)
+  local A = ReadU8(segment, 0x6102) -- Party Made
+  local B = ReadU8(segment, 0x60FC) -- Not in Battle
+  local C = ReadU8(segment, 0x60A3)
+  return A ~= 0x00 and B ~= 0x0B and B ~= 0x0C and not (A== 0xF2 and B == 0xF2 and C == 0xF2)
 end
 
 function updateToggleItemFromByteAndFlag(segment, code, address, flag)
@@ -362,11 +361,6 @@ function updateSectionMultipleChestCountFromByteAndFlag(segment, locationRef, ad
 end
 
 function updateShardsFromMemorySegment(segment)
-    if not isInGame() then
-        return false
-    end
-    
-    InvalidateReadCaches()
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then
         local shardCount = ReadU8(segment, 0x6035)
         local shardCountItem = Tracker:FindObjectForCode("shards")
@@ -384,7 +378,7 @@ function updateShardsFromMemorySegment(segment)
 end
 
 function updateItemsFromMemorySegment(segment)
-    if not isInGame() then
+    if not isInGame(segment) then
         return false
     end
 
@@ -417,14 +411,13 @@ function updateItemsFromMemorySegment(segment)
         updateCanal(segment)
 
     end
+    updateLocationsFromMemorySegmentCorridor(segment)
+    if Tracker.ActiveVariantUID == "shardHunt" or Tracker.ActiveVariantUID == "shardHuntNoMap" then
+      updateShardsFromMemorySegment(segment)
+    end
 end
 
 function updateLocationsFromMemorySegmentCorridor(segment)
-    if not isInGame() then
-        return false
-    end
-
-    InvalidateReadCaches()
     if AUTOTRACKER_ENABLE_ITEM_TRACKING then 
       updateToggleItemFromByteAndFlag(segment, "garland", 0x6202, 0x02)
       updateToggleItemFromByteAndFlag(segment, "king", 0x6201, 0x02)
@@ -546,9 +539,7 @@ function updateLocationsFromMemorySegmentCorridor(segment)
     end
 end
 
-ScriptHost:AddMemoryWatch("FFR Key Item Data", 0x6000, 0x300, updateItemsFromMemorySegment)
-ScriptHost:AddMemoryWatch("FFR Location Data", 0x6200, 0x100, updateLocationsFromMemorySegmentCorridor)
-if Tracker.ActiveVariantUID == "shardHunt" then
-    ScriptHost:AddMemoryWatch("FFR Shard Data", 0x6034, 0x02, updateShardsFromMemorySegment)
-end
+-- I know this is bad practice but the amount of resets makes it so all the sanity
+-- checking needs to be done on the segment
+ScriptHost:AddMemoryWatch("FFR Data", 0x6000, 0x300, updateItemsFromMemorySegment)
 

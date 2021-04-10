@@ -16,7 +16,7 @@
                         "name": "Coneria Castle Incentive",
                         "access_rules": [ "key" ],
                         "item_count": 1,
-                        "hosted_item ": "coneriaLocked"
+                        "hosted_item": "coneriaLocked"
                     },
                     {
                         "name": "King",

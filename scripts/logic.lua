@@ -2,7 +2,6 @@ function hasEnoughShards()
     local shardCountItem = Tracker:FindObjectForCode("shards")
     local shardCountMax = Tracker:FindObjectForCode("shardsRequired")
     local goalShardCount = shardCountMax.CurrentStage + 16
-    print(shardCountItem.CurrentStage, goalShardCount)
     if shardCountItem.CurrentStage >= goalShardCount then
       return 1
     else 

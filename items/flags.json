@@ -1,22 +1,95 @@
 [
+	{
+		"name" : "Northern Docks",
+		"type" : "toggle",
+		"img" : "images/northernDocks.png",
+		"codes" : "northernDocks"
+	},
+	{
+		"name" : "Open Progression",
+		"type" : "progressive",
+		"stages" : [
+			{
+				"img" : "images/openProgression.png",
+				"codes" : "progressionFlag,openProgression"
+			},
+			{
+				"img" : "images/extendedOpen.png",
+				"codes" : "progressionFlag,extendedOpen"
+			}
+		]
+	},
     {
-        "name": "Northern Docks",
+        "name": "NPCs are Incentive",
         "type": "toggle",
-        "img": "images/northernDocks.png",
-        "codes": "northernDocks"
+        "active": true,
+        "img": "images/king.png",
+        "codes": "npcsAreIncentive"
     },
     {
-        "name": "Open Progression",
-        "type": "progressive",
-        "stages": [
-            {
-                "img": "images/openProgression.png",
-                "codes": "openProgression"
-            },
-            {
-                "img": "images/extendedOpen.png",
-                "codes": "extendedOpen"
-            }
-        ]
+        "name": "Fetch Quests are Incentive",
+        "type": "toggle",
+        "img": "images/matoya.png",
+        "codes": "fetchQuestsAreIncentive"
+    },
+    {
+        "name": "Coneria Locked is Incentive",
+        "type": "toggle",
+        "img": "images/coneriaLocked.png",
+        "codes": "coneriaLockedIsIncentive"
+    },
+    {
+        "name": "Marsh is Incentive",
+        "type": "toggle",
+        "img": "images/marsh.png",
+        "codes": "marshIsIncentive"
+    },
+    {
+        "name": "Marsh Locked is Incentive",
+        "type": "toggle",
+        "img": "images/marshLocked.png",
+        "codes": "marshLockedIsIncentive"
+    },
+    {
+        "name": "Ice Cave is Incentive",
+        "type": "toggle",
+        "img": "images/iceCave.png",
+        "codes": "iceCaveIsIncentive"
+    },
+    {
+        "name": "Ordeals is Incentive",
+        "type": "toggle",
+        "img": "images/ordeals.png",
+        "codes": "ordealsIsIncentive"
+    },
+    {
+        "name": "Titan's Trove is Incentive",
+        "type": "toggle",
+        "img": "images/titan.png",
+        "codes": "titansTroveIsIncentive"
+    },
+    {
+        "name": "Earth is Incentive",
+        "type": "toggle",
+        "img": "images/earth.png",
+        "codes": "earthIsIncentive"
+    },
+    {
+        "name": "Volcano is Incentive",
+        "type": "toggle",
+        "img": "images/redD.png",
+        "codes": "volcanoIsIncentive"
+    },
+    {
+        "name": "Sky is Incentive",
+        "type": "toggle",
+        "img": "images/skyPalace.png",
+        "codes": "skyIsIncentive"
+    },
+    {
+        "name": "Sea Shrine is Incentive",
+        "type": "toggle",
+        "img": "images/seaShrine.png",
+        "codes": "seaIsIncentive"
     }
 ]

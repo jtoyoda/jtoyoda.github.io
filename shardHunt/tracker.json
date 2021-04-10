@@ -81,7 +81,7 @@
                             "dock": "top",
                             "content": {
                                 "type": "layout",
-                                "key": "shared_flags_grid_horizontal"
+                                "key": "shared_flags_grid"
                             }
                         },
                         {
@@ -102,19 +102,20 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Overworld",
-                            "content": {
-                                "type": "map",
-                                "maps": [ "overworld" ]
-                            }
-                        },
-                        {
                             "title": "Incentive Locations",
                             "content": {
                                 "type": "map",
                                 "maps": [ "incentives" ]
                             }
+                        },
+                        {
+                            "title": "Overworld",
+                            "content": {
+                                "type": "map",
+                                "maps": [ "overworld" ]
+                            }
                         }
+
                     ]
                 }
             ]
@@ -176,7 +177,7 @@
                                 "type": "layout",
                                 "h_alignment": "center",
                                 "v_alignment": "center",
-                                "key": "shared_flags_grid_vertical"
+                                "key": "shared_flags_grid"
                             }
                         },
                         {
@@ -197,17 +198,17 @@
                     "type": "tabbed",
                     "tabs": [
                         {
-                            "title": "Overworld",
-                            "content": {
-                                "type": "map",
-                                "maps": [ "overworld" ]
-                            }
-                        },
-                        {
                             "title": "Incentive Locations",
                             "content": {
                                 "type": "map",
                                 "maps": [ "incentives" ]
+                            }
+                        },
+                        {
+                            "title": "Overworld",
+                            "content": {
+                                "type": "map",
+                                "maps": [ "overworld" ]
                             }
                         }
                     ]
