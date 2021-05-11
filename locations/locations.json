@@ -538,7 +538,6 @@
                 "name": "Volcano",
                 "access_rules": [
                     "airship",
-                    "bridge,canoe",
                     "openProgression,canoe",
                     "extendedOpen,canoe",
                     "ship,canoe"
