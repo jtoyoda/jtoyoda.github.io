@@ -19,6 +19,24 @@
 			}
 		]
 	},
+	{
+		"name" : "Cardia Island (main) Dock",
+		"type" : "toggle",
+		"img" : "images/cardiaDock.png",
+		"codes" : "cardiaDock"
+	},
+	{
+		"name" : "Gaia Mountain Pass",
+		"type" : "toggle",
+		"img" : "images/gaiaMountain.png",
+		"codes" : "gaiaMountain"
+	},
+	{
+		"name" : "Lefein River Dock",
+		"type" : "toggle",
+		"img" : "images/lefeinRiver.png",
+		"codes" : "lefeinRiver"
+	},
     {
         "name": "NPCs are Incentive",
         "type": "toggle",

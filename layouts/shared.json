@@ -30,8 +30,8 @@
         "v_alignment": "center",
         "item_margin": "1,2",
         "rows": [
-            [ "northernDocks", "extendedOpen" ],
-            [ "npcsAreIncentive", "fetchQuestsAreIncentive" ],
+            [ "northernDocks", "cardiaDock", "gaiaMountain", "lefeinRiver" ],
+            [ "extendedOpen", "npcsAreIncentive", "fetchQuestsAreIncentive" ],
             [ "iceCaveIsIncentive", "ordealsIsIncentive", "marshIsIncentive", "titansTroveIsIncentive" ],
             [ "earthIsIncentive", "volcanoIsIncentive", "seaIsIncentive", "skyIsIncentive" ],
             [ "coneriaLockedIsIncentive", "marshLockedIsIncentive" ]

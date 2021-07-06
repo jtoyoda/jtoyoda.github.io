@@ -639,7 +639,7 @@
         "children": [
             {
                 "name": "Bahamut's Cave",
-                "access_rules": [ "airship" ],
+                "access_rules": [ "airship","cardiaDock,ship,canal" ],
                 "sections": [
                     {
                         "name": "Bahamut",
@@ -747,7 +747,7 @@
         "children": [
             {
                 "name": "Lefein",
-                "access_rules": [ "airship" ],
+                "access_rules": [ "airship","lefeinRiver,canoe,ship,canal" ],
                 "sections": [
                     {
                         "name": "Incentive",
@@ -766,7 +766,7 @@
             },
             {
                 "name": "Gaia",
-                "access_rules": [ "airship" ],
+                "access_rules": [ "airship","gaiaMountain,ship,northernDocks,canal" ],
                 "sections": [
                     {
                         "name": "Fairy",
