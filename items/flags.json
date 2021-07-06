@@ -1,42 +1,42 @@
 [
-	{
-		"name" : "Northern Docks",
-		"type" : "toggle",
-		"img" : "images/northernDocks.png",
-		"codes" : "northernDocks"
-	},
-	{
-		"name" : "Open Progression",
-		"type" : "progressive",
-		"stages" : [
-			{
-				"img" : "images/openProgression.png",
-				"codes" : "progressionFlag,openProgression"
-			},
-			{
-				"img" : "images/extendedOpen.png",
-				"codes" : "progressionFlag,extendedOpen"
-			}
-		]
-	},
-	{
-		"name" : "Cardia Island (main) Dock",
-		"type" : "toggle",
-		"img" : "images/cardiaDock.png",
-		"codes" : "cardiaDock"
-	},
-	{
-		"name" : "Gaia Mountain Pass",
-		"type" : "toggle",
-		"img" : "images/gaiaMountain.png",
-		"codes" : "gaiaMountain"
-	},
-	{
-		"name" : "Lefein River Dock",
-		"type" : "toggle",
-		"img" : "images/lefeinRiver.png",
-		"codes" : "lefeinRiver"
-	},
+    {
+        "name" : "Northern Docks",
+        "type" : "toggle",
+        "img" : "images/northernDocks.png",
+        "codes" : "northernDocks"
+    },
+    {
+        "name" : "Open Progression",
+        "type" : "progressive",
+        "stages" : [
+            {
+                "img" : "images/openProgression.png",
+                "codes" : "progressionFlag,openProgression"
+            },
+            {
+                "img" : "images/extendedOpen.png",
+                "codes" : "progressionFlag,extendedOpen"
+            }
+        ]
+    },
+    {
+        "name" : "Cardia Island (main) Dock",
+        "type" : "toggle",
+        "img" : "images/cardiaDock.png",
+        "codes" : "cardiaDock"
+    },
+    {
+        "name" : "Gaia Mountain Pass",
+        "type" : "toggle",
+        "img" : "images/gaiaMountain.png",
+        "codes" : "gaiaMountain"
+    },
+    {
+        "name" : "Lefein River Dock",
+        "type" : "toggle",
+        "img" : "images/lefeinRiver.png",
+        "codes" : "lefeinRiver"
+    },
     {
         "name": "NPCs are Incentive",
         "type": "toggle",
