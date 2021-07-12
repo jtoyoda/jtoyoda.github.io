@@ -5,7 +5,7 @@
     "platform": "nes",
     "package_version": "1.4.0.0",
     "package_uid": "ff1_rando_jat",
-    "author": "jat2980, DarkmoonEX",
+    "author": "jat2980, DarkmoonEX, HaateXIII",
     "variants": {
         "standard": {
             "display_name": "Standard Map Tracker"

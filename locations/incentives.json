@@ -425,6 +425,25 @@
 						"y" : 480
 					}
 				]
+			},
+{
+				"name" : "I: Cardia Incentive",
+				"access_rules" : [ "airship" ],
+				"sections" : [
+					{
+						"name" : "I: Cardia Incentive",
+						"visibility_rules" : [ "cardiaIsIncentive" ],
+						"access_rules" : [],
+						"hosted_item" : "cardiaIncentive"
+					}
+				],
+				"map_locations" : [
+					{
+						"map" : "incentives",
+						"x" : 1400,
+						"y" : 650
+					}
+				]
 			}
 		]
 	},

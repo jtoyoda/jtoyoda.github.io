@@ -695,10 +695,16 @@
                 "name": "Cardia Forest",
                 "access_rules": [ "airship" ],
                 "sections": [
+					{
+                        "name": "Cardia Incentive",
+                        "access_rules": [],
+                        "item_count": 1,
+                        "hosted_item": "cardiaIncentive"
+                    },
                     {
                         "name": "Chests",
                         "access_rules": [],
-                        "item_count": 7
+                        "item_count": 6
                     }
                 ],
                 "map_locations": [
