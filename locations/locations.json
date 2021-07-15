@@ -772,7 +772,7 @@
             },
             {
                 "name": "Gaia",
-                "access_rules": [ "airship","gaiaMountain,ship,northernDocks,canal" ],
+                "access_rules": [ "airship","gaiaMountain,ship,canoe,lefeinRiver,canal" ],
                 "sections": [
                     {
                         "name": "Fairy",
