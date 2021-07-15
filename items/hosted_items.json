@@ -115,6 +115,12 @@
         "img": "images/titan.png",
         "codes": "titansTrove"
     },
+	{
+		"name": "Cardia Isle Incentive",
+		"type": "toggle",
+		"img": "images/cardiaIncentive.png",
+		"codes": "cardiaIncentive"
+	},
     {
         "name": "Shop Item",
         "type": "toggle",

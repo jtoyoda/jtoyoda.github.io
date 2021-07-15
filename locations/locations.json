@@ -639,7 +639,7 @@
         "children": [
             {
                 "name": "Bahamut's Cave",
-                "access_rules": [ "airship" ],
+                "access_rules": [ "airship","cardiaDock,ship,canal" ],
                 "sections": [
                     {
                         "name": "Bahamut",
@@ -695,10 +695,16 @@
                 "name": "Cardia Forest",
                 "access_rules": [ "airship" ],
                 "sections": [
+					{
+                        "name": "Cardia Incentive",
+                        "access_rules": [],
+                        "item_count": 1,
+                        "hosted_item": "cardiaIncentive"
+                    },
                     {
                         "name": "Chests",
                         "access_rules": [],
-                        "item_count": 7
+                        "item_count": 6
                     }
                 ],
                 "map_locations": [
@@ -747,7 +753,7 @@
         "children": [
             {
                 "name": "Lefein",
-                "access_rules": [ "airship" ],
+                "access_rules": [ "airship","lefeinRiver,canoe,ship,canal" ],
                 "sections": [
                     {
                         "name": "Incentive",
@@ -766,7 +772,7 @@
             },
             {
                 "name": "Gaia",
-                "access_rules": [ "airship" ],
+                "access_rules": [ "airship","gaiaMountain,ship,canoe,lefeinRiver,canal" ],
                 "sections": [
                     {
                         "name": "Fairy",
