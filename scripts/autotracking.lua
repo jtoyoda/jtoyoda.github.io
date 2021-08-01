@@ -164,13 +164,11 @@ function updateTail(segment)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, tail, bahamut, item.CurrentStage)
         end
-		
+
         if tail > 0 and bahamut == 1 then
             item.CurrentStage = 1
-		elseif bahamut == 2 and tail == 1 then
-			item.CurrentStage = 2
-		elseif bahamut == 3.0 and tail == 0 then
-			item.CurrentStage = 2
+        elseif bahamut == 2 and tail == 1 or bahamut == 3 and tail == 0 then
+            item.CurrentStage = 2
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.CurrentStage = 0
         end
@@ -503,7 +501,7 @@ function updateLocationsFromMemorySegmentCorridor(segment)
         updateSectionMultipleChestCountFromByteAndFlag(segment, "@Cardia Grassy/Chests", { [0x628C] = 0x04, [0x628D] = 0x04, [0x628E] = 0x04 })
         updateSectionMultipleChestCountFromByteAndFlag(segment, "@Cardia Swampy/Chests", { [0x6289] = 0x04, [0x628A] = 0x04, [0x628B] = 0x04 })
         updateSectionMultipleChestCountFromByteAndFlag(segment, "@Cardia Forest/Chests", { [0x6284] = 0x04, [0x6285] = 0x04, [0x6286] = 0x04, [0x6288] = 0x04, [0x628F] = 0x04, [0x6290] = 0x04 })
-		updateSectionSingleChestCountFromByteAndFlag(segment, "@Cardia Forest/Cardia Incentive", 0x6287, 0x04)
+        updateSectionSingleChestCountFromByteAndFlag(segment, "@Cardia Forest/Cardia Incentive", 0x6287, 0x04)
         updateSectionMultipleChestCountFromByteAndFlag(segment, "@Ordeals/Chests", { [0x627B] = 0x04, [0x627C] = 0x04, [0x627D] = 0x04, [0x627E] = 0x04, [0x627F] = 0x04, [0x6280] = 0x04, [0x6281] = 0x04, [0x6282] = 0x04 })
         updateSectionSingleChestCountFromByteAndFlag(segment, "@Ordeals/Incentive", 0x6283, 0x04)
         updateSectionSingleChestCountFromByteAndFlag(segment, "@Earth Cave/1 Top", 0x6232, 0x04)
