@@ -167,7 +167,7 @@ function updateTail(segment)
 
         if tail > 0 and bahamut == 1 then
             item.CurrentStage = 1
-        elseif bahamut == 2 and tail == 1 or bahamut == 3 and tail == 0 then
+        elseif ( bahamut == 2 and tail == 1 ) or ( bahamut == 3 and tail == 0 ) then 
             item.CurrentStage = 2
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.CurrentStage = 0
