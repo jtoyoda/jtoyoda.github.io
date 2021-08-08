@@ -165,7 +165,7 @@ function updateTail(segment)
             print(item.Name, tail, bahamut, item.CurrentStage)
         end
 
-        if tail > 0 and bahamut == 1 then
+        if tail > 0 then
             item.CurrentStage = 1
         elseif ( bahamut == 2 and tail == 1 ) or ( bahamut == 3 and tail == 0 ) then 
             item.CurrentStage = 2
