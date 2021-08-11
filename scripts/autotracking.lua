@@ -162,13 +162,16 @@ function updateTail(segment)
         local tail = ReadU8(segment, 0x602D)
         local bahamut = ReadU8(segment, 0x620E)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
-            print(item.Name, tail, bahamut, item.CurrentStage)
+            print(item.Name, tail, bahamut, item.CurrentStage, hadTail)
         end
 
-        if tail > 0 then
+        if tail > 0 and hadTail ~= true then
             item.CurrentStage = 1
-        elseif ( bahamut == 2 and tail == 1 ) or ( bahamut == 3 and tail == 0 ) then 
-            item.CurrentStage = 2
+			hadTail = true
+		end
+		
+        if ( bahamut == 2 and tail == 1 ) or ( bahamut == 3 and tail == 0 ) or ( hadTail == true and tail == 0 ) then
+			item.CurrentStage = 2
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
           item.CurrentStage = 0
         end
