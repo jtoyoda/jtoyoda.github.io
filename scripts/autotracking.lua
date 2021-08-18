@@ -15,7 +15,7 @@ print("")
 
 U8_READ_CACHE = 0
 U8_READ_CACHE_ADDRESS = 0
-originalBahamut = ""
+originalBahamut = "-1"
 
 function autotracker_started()
     print("Started Tracking")
@@ -170,7 +170,7 @@ function updateTail(segment)
             item.CurrentStage = 1
       hadTail = true
     end
-    if ( originalBahamut == "" and hadTail == true ) then
+    if ( originalBahamut == "-1" and hadTail == true ) then
         originalBahamut = bahamut
     end
     
