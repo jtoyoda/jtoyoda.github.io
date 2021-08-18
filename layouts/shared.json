@@ -20,8 +20,8 @@
             [ "king", "sara", "bikke", "nerrick", "smith" ],
             [ "astos", "sarda", "sages", "matoya", "elfprince" ],
             [ "marsh", "marshLocked", "fairy", "lefein", "coneriaLocked" ],
-            [ "robot", "iceCave", "ordeals", "titansTrove", "shopItem" ],
-            [ "earth", "volcano", "sea", "sky" ]
+            [ "robot", "iceCave", "ordeals", "titansTrove", "cardiaIncentive" ],
+            [ "shopItem", "earth", "volcano", "sea", "sky" ]
         ]
     },
     "shared_flags_grid": {
