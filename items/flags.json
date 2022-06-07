@@ -116,8 +116,16 @@
     },
 	{
 		"name": "Cardia Island is Incentive",
-		"type": "toggle",
-		"img": "images/cardiaIncentive.png",
-		"codes": "cardiaIsIncentive"
-	}
+		"type": "progressive",		
+		 "stages" : [
+                    {
+                        "img" : "images/cardiaIncentive.png",
+                        "codes" : "cardiaIsIncentive"
+                    },
+                    {
+                        "img" : "images/BahamutHoard.png",
+                        "codes" : "BahamutHoard"
+            }
+	]
+    }
 ]
