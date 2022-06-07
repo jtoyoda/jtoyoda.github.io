@@ -117,7 +117,7 @@
 	{
 		"name": "Cardia Island is Incentive",
 		"type": "progressive",		
-		 "stages" : [
+		"stages" : [
                     {
                         "img" : "images/cardiaIncentive.png",
                         "codes" : "cardiaIsIncentive"
