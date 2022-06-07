@@ -416,6 +416,12 @@
 						"name" : "I: Bahamut",
 						"access_rules" : [ "tail" ],
 						"hosted_item" : "bahamut"
+					},
+					{
+						"name" : "I: Cardia Incentive",
+						"visibility_rules" : [ "BahamutHoard" ],
+						"access_rules" : [],
+						"hosted_item" : "cardiaIncentive"
 					}
 				],
 				"map_locations" : [
