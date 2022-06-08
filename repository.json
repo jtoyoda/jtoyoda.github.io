@@ -3,7 +3,7 @@
     "packages": [
         {
             "name": "Final Fantasy 1 Randomizer",
-            "author": "jat2980, DarkmoonEX",
+            "author": "jat2980, DarkmoonEX, HaateXIII, Mister Ibis",
             "game_name": "Final Fantasy",
             "flags": [
                 "map",
@@ -11,7 +11,7 @@
                 "chathud",
                 "autotracker"  
             ],
-            "version": "1.4.0.0",
+            "version": "1.4.0.2",
             "uid": "ff1_rando_jat",
             "link": "https://jtoyoda.github.io/ff1_rando_jat.zip",
             "required_app_version": "2.3.0.0",
