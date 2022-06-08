@@ -3,9 +3,9 @@
     "game_name": "Final Fantasy",
     "game_variant": "Entroper (V4.0.0)",
     "platform": "nes",
-    "package_version": "1.4.0.1",
-    "package_uid": "ff1_rando_jat",
-    "author": "jat2980, DarkmoonEX, HaateXIII",
+    "package_version": "1.4.0.2",
+    "package_uid": "ff1_rando_jat_Cardia",
+    "author": "jat2980, DarkmoonEX, HaateXIII, MisterIbis",
     "variants": {
         "standard": {
             "display_name": "Standard Map Tracker"
