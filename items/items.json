@@ -272,11 +272,11 @@
     {
         "name": "Loose Items",
         "type": "progressive",
-		"allow_disabled": false,
+        "allow_disabled": false,
         "stages": [
             {
                 "img": "images/loose0.png",
-				"img_mods": "@disabled",
+                "img_mods": "@disabled",
                 "codes": "loose"
             },
             {
