@@ -268,5 +268,53 @@
                 "codes": "airorb,airorblit"
             }
         ]
+    },
+    {
+        "name": "Loose Items",
+        "type": "progressive",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/loose0.png",
+                "img_mods": "@disabled",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose1.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose2.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose3.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose4.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose5.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose6.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose7.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose8.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose9.png",
+                "codes": "loose"
+            }
+        ]
     }
 ]

@@ -8,7 +8,7 @@
             [ "lute", "key", "rod", "oxyale", "chime", "cube" ],
             [ "bridge", "ship", "canal", "canoe", "floater" ],
             [ "adamant", "tnt", "crown", "crystal", "herb" ],
-            [ "garland", "ruby", "tail", "slab", "bottle" ]
+            [ "garland", "ruby", "tail", "slab", "bottle", "loose" ]
         ]
     },
     "shared_locations_grid": {
