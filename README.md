@@ -12,9 +12,8 @@ Autotracking available for use with EmoTracker + BizHawk through use of a lua sc
 
 Some flags, locations, and items have multiple selections. Left click or right click to cycle forward or backwards. 
 
-The "L" with a number next to it is an option for use to indicate Loose Items.
-- An option for Duds will come in a future update. 
-- Both these flag settings have no effect on the map or items, only for visual reference. 
+The "L" and "D" with a number next to it is an option for use to indicate Loose or Dud item location amounts.
+- Both these buttons have no effect on the map or items, only for visual reference. 
 
 Flags have been split between Map Edit flags and Incentive location flags.
 
