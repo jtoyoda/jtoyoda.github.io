@@ -88,6 +88,18 @@
         "codes": "canal"
     },
     {
+        "name": "Sigil",
+        "type": "toggle",
+        "img": "images/items/sigil.png",
+        "codes": "sigil"
+    },
+    {
+        "name": "Lukahn's Mark",
+        "type": "toggle",
+        "img": "images/items/mark.png",
+        "codes": "mark"
+    },
+    {
         "name": "Canoe",
         "type": "toggle",
         "img": "images/items/canoe.png",
