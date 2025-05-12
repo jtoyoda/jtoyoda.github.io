@@ -6,10 +6,7 @@ print("Starting up scipts")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/hosted_items.json")
 Tracker:AddItems("items/flags.json")
-
-if Tracker.ActiveVariantUID == "shardHunt" or Tracker.ActiveVariantUID == "shardHuntNoMap" or Tracker.ActiveVariantUID == "shardHuntNOverworld" then
-  Tracker:AddItems("shardHunt/shards.json")
-end
+Tracker:AddItems("shardHunt/shards.json")
 
 if Tracker.ActiveVariantUID == "NOverworld" or Tracker.ActiveVariantUID == "shardHuntNOverworld" then
   Tracker:AddMaps("maps/NOverworldMaps.json")
