@@ -1,37 +1,37 @@
 {
-    "shared_item_grid": {
+	"shared_item_grid": {
 		"type" : "container",
 		"content" : {
-        	"type": "itemgrid",
-        	"h_alignment": "center",
+			"type": "itemgrid",
+			"h_alignment": "center",
 			"v_alignment": "center",
-        	"item_margin": "1,2",
-        	"rows": [
-            	[ "lute", "earthorb", "fireorb", "waterorb", "airorb" ],
-            	[ "key", "rod", "oxyale", "chime", "cube" ],
-            	[ "bridge", "ship", "canal", "canoe", "floater" ],
-            	[ "adamant", "tnt", "crown", "crystal", "herb" ],
-            	[ "garland", "ruby", "tail", "slab", "bottle" ]
-        	]
-    	}
+			"item_margin": "1,2",
+			"rows": [
+				[ "lute", "earthorb", "fireorb", "waterorb", "airorb" ],
+				[ "key", "rod", "oxyale", "chime", "cube" ],
+				[ "bridge", "ship", "canal", "canoe", "floater" ],
+				[ "adamant", "tnt", "crown", "crystal", "herb" ],
+				[ "garland", "ruby", "tail", "slab", "bottle" ]
+			]
+		}
 	},
-    "shared_locations_grid": {
+	"shared_locations_grid": {
 		"type" : "container",
 		"content" : {
-	        "type": "itemgrid",
-    	    "h_alignment": "center",
-        	"v_alignment": "center",
-        	"item_margin": "1,2",
-        	"rows": [
-        	    [ "king", "sara", "bikke", "nerrick", "smith" ],
-        	    [ "astos", "sarda", "sages", "matoya", "elfprince" ],
-        	    [ "marsh", "marshLocked", "fairy", "lefein", "coneriaLocked" ],
-            	[ "robot", "iceCave", "ordeals", "titansTrove", "cardiaIncentive" ],
-            	[ "shopItem", "earth", "volcano", "sea", "sky" ]
-        	]
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"v_alignment": "center",
+			"item_margin": "1,2",
+			"rows": [
+				[ "king", "sara", "bikke", "nerrick", "smith" ],
+				[ "astos", "sarda", "sages", "matoya", "elfprince" ],
+				[ "marsh", "marshLocked", "fairy", "lefein", "coneriaLocked" ],
+				[ "robot", "iceCave", "ordeals", "titansTrove", "cardiaIncentive" ],
+				[ "shopItem", "earth", "volcano", "sea", "sky" ]
+			]
 		}
-    },
-    "NOverworld_item_grid" : {
+	},
+	"NOverworld_item_grid" : {
 		"type" : "container",
 		"content" : {
 			"type" : "itemgrid",
@@ -47,36 +47,36 @@
 			]
 		}
 	},
-    "shared_flags_grid": {
+	"shared_flags_grid": {
 		"type" : "container",
 		"content" : {
 			"type": "itemgrid",
-        	"h_alignment": "center",
-        	"v_alignment": "center",
-        	"item_margin": "1,2",
-        	"rows": [
-        	    [ "extendedOpen" ],
-        	    [ "northernDocks", "luffyDock" ],
-        	    [ "cardiaDock", "lefeinRiver" ],
-        	    [ "lefeinBridge", "gaiaMountain" ],
-        	    [ "hwyOrdeals", "melmondRiver" ]
-        	]
+			"h_alignment": "center",
+			"v_alignment": "center",
+			"item_margin": "1,2",
+			"rows": [
+				[ "extendedOpen" ],
+				[ "northernDocks", "luffyDock" ],
+				[ "cardiaDock", "lefeinRiver" ],
+				[ "lefeinBridge", "gaiaMountain" ],
+				[ "hwyOrdeals", "melmondRiver" ]
+			]
 		}
-    },
-    "shared_incentives_grid": {
+	},
+	"shared_incentives_grid": {
 		"type" : "container",
 		"content" : {
-	        "type": "itemgrid",
-    	    "h_alignment": "center",
-        	"v_alignment": "center",
-	        "item_margin": "1,2",
-    	    "rows": [
-        	    [ "npcsAreIncentive", "fetchQuestsAreIncentive" ],
-            	[ "iceCaveIsIncentive", "ordealsIsIncentive", "marshIsIncentive", "titansTroveIsIncentive" ],
-            	[ "earthIsIncentive", "volcanoIsIncentive", "seaIsIncentive", "skyIsIncentive" ],
-            	[ "coneriaLockedIsIncentive", "marshLockedIsIncentive", "cardiaIsIncentive" ],
-            	[ "loose" ]
-        	]
+			"type": "itemgrid",
+			"h_alignment": "center",
+			"v_alignment": "center",
+			"item_margin": "1,2",
+			"rows": [
+				[ "npcsAreIncentive", "fetchQuestsAreIncentive" ],
+				[ "iceCaveIsIncentive", "ordealsIsIncentive", "marshIsIncentive", "titansTroveIsIncentive" ],
+				[ "earthIsIncentive", "volcanoIsIncentive", "seaIsIncentive", "skyIsIncentive" ],
+				[ "coneriaLockedIsIncentive", "marshLockedIsIncentive", "cardiaIsIncentive" ],
+				[ "loose", "dud" ]
+			]
 		}
-    }
+	}
 }
