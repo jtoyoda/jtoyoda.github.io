@@ -229,7 +229,7 @@
 		"children" : [
 			{
 				"name" : "I: Sarda's Cave",
-				"access_rules" : [ "ruby", "tnt", "canoe" ],
+				"access_rules" : [ "ruby", "tnt", "mark" ],
 				"sections" : [
 					{
 						"name" : "I: Sarda",
@@ -267,7 +267,7 @@
 			},
 			{
 				"name" : "I: Earth Cave",
-				"access_rules" : [ "ruby", "tnt", "canoe" ],
+				"access_rules" : [ "ruby", "tnt", "mark" ],
 				"sections" : [
 					{
 						"name" : "I: Earth Orb",
@@ -291,7 +291,7 @@
 			},
 			{
 				"name" : "I: Melmond",
-				"access_rules" : [ "ruby,slab", "tnt,slab", "canoe,slab" ],
+				"access_rules" : [ "ruby,slab", "tnt,slab", "mark,slab" ],
 				"sections" : [
 					{
 						"name" : "I: Dr Unne",
@@ -315,7 +315,7 @@
 		"children" : [
 			{
 				"name" : "I: Crescent Lake",
-				"access_rules" : [ "canoe", "tnt" ],
+				"access_rules" : [ "mark", "tnt" ],
 				"sections" : [
 					{
 						"name" : "I: Sages",
@@ -334,7 +334,7 @@
 			},
 			{
 				"name" : "I: Ice Cave",
-				"access_rules" : [ "canoe", "sigil,oxyale,chime" ],
+				"access_rules" : [ "mark", "sigil,oxyale,chime" ],
 				"sections" : [
 					{
 						"name" : "I: Ice Cave Incentive",
@@ -353,7 +353,7 @@
 			},
 			{
 				"name" : "I: Volcano",
-				"access_rules" : [ "canoe", "sigil,chime,oxyale"],
+				"access_rules" : [ "mark", "sigil,chime,oxyale"],
 				"sections" : [
 					{
 						"name" : "I: Fire Orb",
@@ -445,7 +445,7 @@
 		"children" : [
 			{
 				"name" : "I: Ordeals",
-				"access_rules" : [ "canoe" ],
+				"access_rules" : [ "mark" ],
 				"sections" : [
 					{
 						"name" : "I: Incentive",
@@ -508,7 +508,7 @@
 			},
 			{
 				"name" : "I: Sky Palace",
-				"access_rules" : [ "sigil,oxyale,canoe,cube", "sigil,chime,cube" ],
+				"access_rules" : [ "sigil,oxyale,mark,cube", "sigil,chime,cube" ],
 				"sections" : [
 					{
 						"name" : "I: Air Orb",
@@ -557,7 +557,7 @@
 			},
 			{
 				"name" : "I: Sea Shrine",
-				"access_rules" : [ "sigil,oxyale,canoe", "sigil,chime" ],
+				"access_rules" : [ "sigil,oxyale,mark", "sigil,chime" ],
 				"sections" : [
 					{
 						"name" : "I: Water Orb",
@@ -575,7 +575,7 @@
 			},
 			{
 				"name" : "I: Sea Incentive",
-				"access_rules" : [ "sigil,oxyale,canoe", "sigil,chime" ],
+				"access_rules" : [ "sigil,oxyale,mark", "sigil,chime" ],
 				"sections" : [
 					{
 						"name" : "I: Sea Incentive",
