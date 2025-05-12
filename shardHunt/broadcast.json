@@ -34,15 +34,6 @@
                             },
                             {
                                 "type": "group",
-                                "header": "Shards",
-                                "dock": "top",
-                                "content": {
-                                    "type": "layout",
-                                    "key": "shared_shard_hunt_grid_vertical"
-                                }
-                            },
-                            {
-                                "type": "group",
                                 "header": "Flags",
                                 "dock": "top",
                                 "content": {
@@ -57,6 +48,15 @@
                                 "content": {
                                     "type": "layout",
                                     "key": "shared_incentives_grid"
+                                }
+                            },
+                            {
+                                "type": "group",
+                                "header": "Shards",
+                                "dock": "top",
+                                "content": {
+                                    "type": "layout",
+                                    "key": "shared_shard_hunt_grid_vertical"
                                 }
                             }
                         ]
