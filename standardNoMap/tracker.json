@@ -17,7 +17,7 @@
     "tracker_default": {
         "type": "container",
         "width": 633,
-        "height": 250,
+        "height": 227,
         "background": "#5f6393",
         "content": {
                 "type": "array",
