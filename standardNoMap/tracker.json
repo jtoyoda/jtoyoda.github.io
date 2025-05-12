@@ -6,8 +6,8 @@
             "h_alignment": "center",
             "item_margin": "1,2",
             "rows": [
-                [ "earthorb", "fireorb", "waterorb", "airorb" ],
-                [ "lute", "key", "rod", "oxyale", "chime", "cube" ],
+                [ "lute", "earthorb", "fireorb", "waterorb", "airorb" ],
+                [ "key", "rod", "oxyale", "chime", "cube" ],
                 [ "bridge", "ship", "canal", "canoe", "floater" ],
                 [ "adamant", "tnt", "crown", "crystal", "herb" ],
                 [ "garland", "ruby", "tail", "slab", "bottle" ]
@@ -16,7 +16,7 @@
     },
     "tracker_default": {
         "type": "container",
-        "width": 417,
+        "width": 383,
         "height": 250,
         "background": "#5f6393",
         "content": {

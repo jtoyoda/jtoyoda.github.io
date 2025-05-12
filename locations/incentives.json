@@ -77,7 +77,12 @@
 			},
 			{
 				"name" : "I: Dwarf Cave",
-				"access_rules" : [ "openProgression", "ship", "airship", "extendedOpen" ],
+				"access_rules" : [
+					"openProgression",
+					"ship",
+					"airship",
+					"extendedOpen"
+				],
 				"sections" : [
 					{
 						"name" : "I: Smithy McBeardSmith",
@@ -102,7 +107,12 @@
 			},
 			{
 				"name" : "I: North West Castle",
-				"access_rules" : [ "openProgression,canoe", "ship", "airship", "extendedOpen" ],
+				"access_rules" : [
+					"openProgression,canoe",
+					"ship",
+					"airship",
+					"extendedOpen"
+				],
 				"sections" : [
 					{
 						"name" : "I: Astos",
@@ -146,7 +156,12 @@
 			},
 			{
 				"name" : "I: Elf Castle",
-				"access_rules" : [ "openProgression,canoe", "ship", "airship", "extendedOpen" ],
+				"access_rules" : [
+					"openProgression,canoe",
+					"ship",
+					"airship",
+					"extendedOpen"
+				],
 				"sections" : [
 					{
 						"name" : "I: Elf Prince",
@@ -190,7 +205,12 @@
 			},
 			{
 				"name" : "I: Marsh Cave",
-				"access_rules" : [ "openProgression,canoe", "ship", "airship", "extendedOpen" ],
+				"access_rules" : [
+					"openProgression,canoe",
+					"ship",
+					"airship",
+					"extendedOpen"
+				],
 				"sections" : [
 					{
 						"name" : "I: Marsh Incentive",
@@ -221,7 +241,11 @@
 		"children" : [
 			{
 				"name" : "I: Sarda's Cave",
-				"access_rules" : [ "airship", "ruby,ship,canal" ],
+				"access_rules" : [
+					"airship",
+					"ruby,ship,canal",
+					"melmondRiver,canoe,ruby"
+				],
 				"sections" : [
 					{
 						"name" : "I: Sarda",
@@ -240,7 +264,11 @@
 			},
 			{
 				"name" : "I: Titan's Trove",
-				"access_rules" : [ "ruby,airship", "ruby,ship,canal" ],
+				"access_rules" : [
+					"ruby,airship",
+					"ruby,ship,canal",
+					"melmondRiver,canoe,ruby"
+				],
 				"sections" : [
 					{
 						"name" : "I: Incentive",
@@ -259,7 +287,11 @@
 			},
 			{
 				"name" : "I: Earth Cave",
-				"access_rules" : [ "airship", "ship,canal" ],
+				"access_rules" : [
+					"airship",
+					"ship,canal",
+					"melmondRiver,canoe"
+				],
 				"sections" : [
 					{
 						"name" : "I: Earth Orb",
@@ -283,7 +315,11 @@
 			},
 			{
 				"name" : "I: Melmond",
-				"access_rules" : [ "ship,canal,slab", "airship,slab" ],
+				"access_rules" : [
+					"ship,canal,slab",
+					"airship,slab",
+					"melmondRiver,canoe,slab"
+				],
 				"sections" : [
 					{
 						"name" : "I: Dr Unne",
@@ -386,7 +422,12 @@
 			},
 			{
 				"name" : "I: Ryukahn Desert",
-				"access_rules" : [ "canoe,openProgression", "ship,canoe", "canoe,extendedOpen" ],
+				"access_rules" : [
+					"canoe,openProgression",
+					"ship,canoe",
+					"canoe,extendedOpen",
+					"luffyDock,ship,canal"
+				],
 				"sections" : [
 					{
 						"name" : "I: Floater Turn In",
@@ -410,7 +451,10 @@
 		"children" : [
 			{
 				"name" : "I: Bahamut's Cave",
-				"access_rules" : [ "airship","cardiaDock,ship,canal" ],
+				"access_rules" : [
+					"airship",
+					"cardiaDock,ship,canal"
+				],
 				"sections" : [
 					{
 						"name" : "I: Bahamut",
@@ -434,7 +478,10 @@
 			},
 {
 				"name" : "I: Cardia Incentive",
-				"access_rules" : [ "airship" ],
+				"access_rules" : [
+					"airship",
+					"cardiaDock,ship,canal"
+				],
 				"sections" : [
 					{
 						"name" : "I: Cardia Incentive",
@@ -459,7 +506,11 @@
 		"children" : [
 			{
 				"name" : "I: Ordeals",
-				"access_rules" : [ "airship,canoe", "ship,canal,canoe" ],
+				"access_rules" : [
+					"airship,canoe",
+					"ship,canal,canoe",
+					"lefeinBridge,hwyOrdeals,bridge,canoe"
+				],
 				"sections" : [
 					{
 						"name" : "I: Incentive",
@@ -484,7 +535,13 @@
 		"children" : [
 			{
 				"name" : "I: Lefein",
-				"access_rules" : [ "airship","lefeinRiver,canoe,ship,canal" ],
+				"access_rules" : [
+					"airship",
+					"lefeinRiver,canoe,ship,canal",
+					"bridge,lefeinBridge",
+					"hwyOrdeals,ship,canal,canoe",
+					"northernDocks,ship,canal,hwyOrdeals"
+				],
 				"sections" : [
 					{
 						"name" : "I: Incentive",
@@ -503,7 +560,13 @@
 			},
 			{
 				"name" : "I: Gaia",
-				"access_rules" : [ "airship","gaiaMountain,ship,lefeinRiver,canoe,canal" ],
+				"access_rules" : [
+					"airship",
+					"lefeinRiver,gaiaMountain,ship,canal,canoe",
+					"northernDocks,hwyOrdeals,gaiaMountain,ship,canal",
+					"hwyOrdeals,gaiaMountain,ship,canal,canoe",
+					"lefeinBridge,gaiaMountain,bridge"
+				],
 				"sections" : [
 					{
 						"name" : "I: Fairy",
@@ -522,7 +585,12 @@
 			},
 			{
 				"name" : "I: Sky Palace",
-				"access_rules" : [ "airship,chime,cube", "northernDocks,chime,cube,ship,canal" ],
+				"access_rules" : [
+					"airship,chime,cube",
+					"northernDocks,ship,canal,chime,cube",
+					"lefeinBridge,bridge,hwyOrdeals,chime,cube",
+					"hwyOrdeals,ship,canal,canoe,chime,cube"
+				],
 				"sections" : [
 					{
 						"name" : "I: Air Orb",
@@ -552,7 +620,10 @@
 		"children" : [
 			{
 				"name" : "I: Waterfall",
-				"access_rules" : [ "airship,canoe", "northernDocks,ship,canal,canoe" ],
+				"access_rules" : [
+					"airship,canoe",
+					"northernDocks,ship,canal,canoe"
+				],
 				"sections" : [
 					{
 						"name" : "I: Robot",
@@ -571,7 +642,10 @@
 			},
 			{
 				"name" : "I: Sea Shrine",
-				"access_rules" : [ "airship,canoe,oxyale", "northernDocks,ship,canal,oxyale" ],
+				"access_rules" : [
+					"airship,canoe,oxyale",
+					"northernDocks,ship,canal,oxyale"
+				],
 				"sections" : [
 					{
 						"name" : "I: Water Orb",
@@ -590,6 +664,24 @@
 						"map" : "incentives",
 						"x" : 740,
 						"y" : 660
+					}
+				]
+			},
+			{
+				"name": "I: Shop Item",
+				"access_rules": [],
+				"sections": [
+					{
+						"name": "I: Shop Item",
+						"access_rules": [],
+						"hosted_item": "shopItem"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "incentives",
+						"x": 310,
+						"y": 460
 					}
 				]
 			}

@@ -107,13 +107,6 @@
                                 "type": "map",
                                 "maps": [ "incentives" ]
                             }
-                        },
-                        {
-                            "title": "Chest Locations",
-                            "content": {
-                                "type": "map",
-                                "maps": [ "locations" ]
-                            }
                         }
                     ]
                 }
@@ -201,13 +194,6 @@
                             "content": {
                                 "type": "map",
                                 "maps": [ "incentives" ]
-                            }
-                        },
-                        {
-                            "title": "Chest Locations",
-                            "content": {
-                                "type": "map",
-                                "maps": [ "locations" ]
                             }
                         }
                     ]
