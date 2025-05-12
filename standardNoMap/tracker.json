@@ -23,7 +23,8 @@
             "content": [ {
                 "type": "dock",
                 "dock": "left",
-                "v_alignment": "stretch",
+                "h_alignment": "center",
+                "v_alignment": "center",
                 "content": [
                     {
                         "type": "group",
