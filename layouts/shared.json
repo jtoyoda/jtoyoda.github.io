@@ -36,7 +36,7 @@
             [ "lefeinBridge", "gaiaMountain" ],
             [ "hwyOrdeals", "melmondRiver" ]
         ]
-    }
+    },
     "shared_incentives_grid": {
         "type": "itemgrid",
         "h_alignment": "center",
