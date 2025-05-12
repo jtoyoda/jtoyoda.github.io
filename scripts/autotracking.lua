@@ -92,6 +92,22 @@ function updateCanal(segment)
     end
 end
 
+function updateSigil(segment)
+    local item = Tracker:FindObjectForCode("sigil")
+    if item then
+        local value = ReadU8(segment, 0x602B)
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
+            print(item.Name, "sigil", value)
+        end
+
+        if value == 1 then
+            item.Active = true
+        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
+            item.Active = false
+        end
+    end
+end
+
 function updateFloater(segment)
     local item = Tracker:FindObjectForCode("floater")
     if item then
@@ -402,6 +418,7 @@ function updateItemsFromMemorySegment(segment)
         updateToggleItemFromByteAndFlag(segment, "oxyale", 0x6030, 0xFF)
         updateToggleItemFromByteAndFlag(segment, "ship", 0x6000, 0xFF)
         updateToggleItemFromByteAndFlag(segment, "canoe", 0x6012 , 0xFF)
+        updateToggleItemFromByteAndFlag(segment, "mark", 0x6012 , 0xFF)
         updateToggleItemFromByteAndFlag(segment, "bridge", 0x6008 , 0xFF)
         updateOrbFromByteAndFlag(segment, "fireorb", 0x6032 , 0xFF)
         updateOrbFromByteAndFlag(segment, "waterorb", 0x6033 , 0xFF)
@@ -417,11 +434,12 @@ function updateItemsFromMemorySegment(segment)
         updateTail(segment)
         updateRuby(segment)
         updateFloater(segment)
+        updateSigil(segment)
         updateCanal(segment)
 
     end
     updateLocationsFromMemorySegmentCorridor(segment)
-    if Tracker.ActiveVariantUID == "shardHunt" or Tracker.ActiveVariantUID == "shardHuntNoMap" then
+    if Tracker.ActiveVariantUID == "shardHunt" or Tracker.ActiveVariantUID == "shardHuntNoMap" or Tracker.ActiveVariantUID == "shardHuntNOverworld" then
       updateShardsFromMemorySegment(segment)
     end
 end

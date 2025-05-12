@@ -1,23 +1,35 @@
 {
     "name": "Final Fantasy 1 Randomizer",
     "game_name": "Final Fantasy",
-    "game_variant": "Entroper (V4.0.0)",
+    "game_variant": "Entroper (V4.8.6)",
     "platform": "nes",
-    "package_version": "1.4.0.3",
+    "package_version": "1.5.0.1",
     "package_uid": "ff1_rando_jat",
-    "author": "jat2980, DarkmoonEX, HaateXIII, Mister Ibis",
+    "author": "jat2980, DarkmoonEX, HaateXIII, Mister Ibis, meklin89",
     "variants": {
+        "standardNoMap": {
+            "display_name": "Standard Tracker"
+        },
+        "shardHuntNoMap": {
+            "display_name": "Shard Hunt Tracker"
+        },
+        "NOverworldNoMap": {
+            "display_name": "NOverworld"
+        },
+        "shardHuntNOverworldNoMap": {
+            "display_name": "NOverworld Shard Hunt"
+        },
         "standard": {
             "display_name": "Standard Map Tracker"
         },
         "shardHunt": {
             "display_name": "Shard Hunt Map Tracker"
         },
-        "standardNoMap": {
-            "display_name": "Standard Tracker"
+        "NOverworld": {
+            "display_name": "NOverworld Map Tracker"
         },
-        "shardHuntNoMap": {
-            "display_name": "Shard Hunt Tracker"
+        "shardHuntNOverworld": {
+            "display_name": "NOverworld Shard Hunt Map Tracker"
         }
     }
 }

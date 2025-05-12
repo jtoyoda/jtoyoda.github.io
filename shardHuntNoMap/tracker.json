@@ -28,8 +28,8 @@
             "h_alignment": "center",
             "item_margin": "1,2",
             "rows": [
-                [ "earthorb", "fireorb", "waterorb", "airorb" ],
-                [ "lute", "key", "rod", "oxyale", "chime", "cube" ],
+                [ "lute", "earthorb", "fireorb", "waterorb", "airorb" ],
+                [ "key", "rod", "oxyale", "chime", "cube" ],
                 [ "bridge", "ship", "canal", "canoe", "floater" ],
                 [ "adamant", "tnt", "crown", "crystal", "herb" ],
                 [ "garland", "ruby", "tail", "slab", "bottle" ]
@@ -39,8 +39,8 @@
     "tracker_default": {
         "type": "container",
         "background": "#5f6393",
-        "width": 542,
-        "height": 250,
+        "width": 758,
+        "height": 227,
         "content": {
             "type": "array",
             "orientation": "horizontal",
@@ -67,6 +67,30 @@
                         "h_alignment": "center",
                         "v_alignment": "center",
                         "key": "shared_locations_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Flags",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "shared_flags_grid"
+                    }
+                },
+                {
+                    "type": "group",
+                    "header": "Incentives",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "shared_incentives_grid"
                     }
                 },
                 {
