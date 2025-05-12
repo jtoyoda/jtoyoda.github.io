@@ -16,15 +16,12 @@
     },
     "tracker_default": {
         "type": "container",
+        "width": 500,
+        "height": 250,
         "background": "#5f6393",
         "content": {
-            "type": "dock",
-            "dropshadow": false,
-            "content": [ {
-                "type": "dock",
-                "dock": "left",
-                "h_alignment": "center",
-                "v_alignment": "center",
+                "type": "array",
+                "orientation": "horizontal",
                 "content": [
                     {
                         "type": "group",
@@ -73,7 +70,6 @@
                         }
                     }
                 ]
-            } ]
         }
     }
 }
