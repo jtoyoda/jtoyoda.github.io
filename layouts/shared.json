@@ -2,7 +2,7 @@
     "shared_item_grid": {
         "type": "itemgrid",
         "h_alignment": "center",
-	"v_alignment": "center",
+		"v_alignment": "center",
         "item_margin": "1,2",
         "rows": [
             [ "lute", "earthorb", "fireorb", "waterorb", "airorb" ],
@@ -26,20 +26,18 @@
         ]
     },
     "NOverworld_item_grid": {
-        "type": "container",
-        "content": {
-            "type": "itemgrid",
-            "h_alignment": "center",
-			"v_alignment": "center",
-            "item_margin": "1,2",
-            "rows": [
-                [ "lute", "earthorb", "fireorb", "waterorb", "airorb" ],
-                [ "key", "rod", "oxyale", "chime", "cube" ],
-                [ "mark", "sigil" ],
-                [ "adamant", "tnt", "crown", "crystal", "herb" ],
-                [ "garland", "ruby", "tail", "slab", "bottle" ]
-            ]
-        }
+		"type": "itemgrid",
+    	"h_alignment": "center",
+		"v_alignment": "center",
+        "item_margin": "1,2",
+        "rows": [
+            [ "lute", "earthorb", "fireorb", "waterorb", "airorb" ],
+            [ "key", "rod", "oxyale", "chime", "cube" ],
+            [ "mark", "sigil" ],
+            [ "adamant", "tnt", "crown", "crystal", "herb" ],
+            [ "garland", "ruby", "tail", "slab", "bottle" ]
+        ]
+	}
     },
     "shared_flags_grid": {
         "type": "itemgrid",
@@ -68,8 +66,6 @@
         ]
     },
 	"NOverworld_item_grid": {
-        "type": "container",
-        "content": {
             "type": "itemgrid",
             "h_alignment": "center",
 			"v_alignment": "center",
