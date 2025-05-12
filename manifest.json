@@ -20,12 +20,15 @@
             "display_name": "Shard Hunt Map Tracker"
         },
         "NOverworldNoMap": {
-            "display_name": "NOverworld No Map"
+            "display_name": "NOverworld"
         },
-        "NOverworld":{
+        "NOverworld": {
             "display_name": "NOverworld Map Tracker"
         },
-        "shardHuntNOverworld":{
+        "shardHuntNOverworldNoMap": {
+            "display_name": "NOverworld Shard Hunt"
+        },
+        "shardHuntNOverworld": {
             "display_name": "NOverworld Shard Hunt Map Tracker"
         }
     }
