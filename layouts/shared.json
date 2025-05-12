@@ -71,7 +71,7 @@
         	"v_alignment": "center",
 	        "item_margin": "1,2",
     	    "rows": [
-        	    [ "npcsAreIncentive", "fetchQuestsAreIncentive" ]
+        	    [ "npcsAreIncentive", "fetchQuestsAreIncentive" ],
             	[ "iceCaveIsIncentive", "ordealsIsIncentive", "marshIsIncentive", "titansTroveIsIncentive" ],
             	[ "earthIsIncentive", "volcanoIsIncentive", "seaIsIncentive", "skyIsIncentive" ],
             	[ "coneriaLockedIsIncentive", "marshLockedIsIncentive", "cardiaIsIncentive" ],
