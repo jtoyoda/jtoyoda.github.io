@@ -32,7 +32,7 @@
         "type" : "toggle",
         "img" : "images/flags/cardiaDock.png",
         "codes" : "cardiaDock",
-		"disabled_img" : "images/noCardiaDock.png"
+		"disabled_img" : "images/flags/noCardiaDock.png"
     },
     {
         "name" : "Lefein River Dock",
