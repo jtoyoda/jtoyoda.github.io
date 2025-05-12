@@ -3,32 +3,35 @@
     "packages": [
         {
             "name": "Final Fantasy 1 Randomizer",
-            "author": "jat2980, DarkmoonEX, HaateXIII, Mister Ibis",
+            "author": "jat2980, DarkmoonEX, HaateXIII, Mister Ibis, meklin89",
             "game_name": "Final Fantasy",
             "flags": [
                 "map",
                 "pins",
-                "chathud",
                 "autotracker"  
             ],
-            "version": "1.4.0.3",
+            "version": "1.5.0.1",
             "uid": "ff1_rando_jat",
             "link": "https://jtoyoda.github.io/ff1_rando_jat.zip",
             "required_app_version": "2.3.0.0",
             "variants": [
                 {
-                    "name": "Standard Map Tracker",
+                    "name": "Standard Tracker",
                     "flags": [
-                        "map",
-                        "pins",
-                        "chathud",
                         "autotracker"
                     ]
                 },
                 {
-                    "name": "Standard Tracker",
+                    "name": "Standard Map Tracker",
                     "flags": [
-                        "chathud",
+                        "map",
+                        "pins",
+                        "autotracker"
+                    ]
+                },
+                {
+                    "name": "Shard Hunt Tracker",
+                    "flags": [
                         "autotracker"
                     ]
                 },
@@ -37,14 +40,22 @@
                     "flags": [
                         "map",
                         "pins",
-                        "chathud",
                         "autotracker"
                     ]
                 },
                 {
-                    "name": "Shard Hunt Tracker",
+                    "name": "NOverworld Map Tracker",
                     "flags": [
-                        "chathud",
+                        "map",
+                        "pins",
+                        "autotracker"
+                    ]
+                },
+                {
+                    "name": "NOverworld Shard Hunt Map Tracker",
+                    "flags": [
+                        "map",
+                        "pins",
                         "autotracker"
                     ]
                 }
