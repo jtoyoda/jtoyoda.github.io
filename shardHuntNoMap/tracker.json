@@ -39,8 +39,8 @@
     "tracker_default": {
         "type": "container",
         "background": "#5f6393",
-        "width": 508,
-        "height": 250,
+        "width": 758,
+        "height": 227,
         "content": {
             "type": "array",
             "orientation": "horizontal",
