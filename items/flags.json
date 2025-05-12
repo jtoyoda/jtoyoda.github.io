@@ -155,5 +155,101 @@
                 "codes" : "BahamutHoard"
             }
         ]
+    },
+	{
+        "name": "Loose Items",
+        "type": "progressive",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/loose/loose0.png",
+                "img_mods": "@disabled",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose1.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose2.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose3.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose4.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose5.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose6.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose7.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose8.png",
+                "codes": "loose"
+            },
+            {
+                "img": "images/loose/loose9.png",
+                "codes": "loose"
+            }
+        ]
+    },
+	{
+        "name": "dud Items",
+        "type": "progressive",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/dud/dud0.png",
+                "img_mods": "@disabled",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud1.png",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud2.png",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud3.png",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud4.png",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud5.png",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud6.png",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud7.png",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud8.png",
+                "codes": "dud"
+            },
+            {
+                "img": "images/dud/dud9.png",
+                "codes": "dud"
+            }
+        ]
     }
 ]
