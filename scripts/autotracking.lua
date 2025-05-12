@@ -100,7 +100,7 @@ function updateSigil(segment)
             print(item.Name, "sigil", value)
         end
 
-        if value == 0 then
+        if value == 1 then
             item.Active = true
         elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
             item.Active = false
