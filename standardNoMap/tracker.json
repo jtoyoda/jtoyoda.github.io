@@ -16,7 +16,7 @@
     },
     "tracker_default": {
         "type": "container",
-        "min_width": 6,
+        "width": 633,
         "height": 227,
         "background": "#5f6393",
         "content": {
