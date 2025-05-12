@@ -8,7 +8,7 @@
 			"rows" : [
 				[ "lute", "earthorb", "fireorb", "waterorb", "airorb" ],
 				[ "key", "rod", "oxyale", "chime", "cube" ],
-				[ "bridge", "ship", "canal", "canoe", "floater" ],
+				[ "mark", "sigil" ],
 				[ "adamant", "tnt", "crown", "crystal", "herb" ],
 				[ "garland", "ruby", "tail", "slab", "bottle" ]
 			]
@@ -32,7 +32,7 @@
 							"dock" : "top",
 							"content" : {
 								"type" : "layout",
-								"key" : "shared_item_grid"
+								"key" : "tracker_capture_item"
 							}
 						},
 						{
@@ -102,7 +102,7 @@
 								"type" : "layout",
 								"h_alignment" : "center",
 								"v_alignment" : "center",
-								"key" : "shared_item_grid"
+								"key" : "tracker_capture_item"
 							}
 						},
 						{
