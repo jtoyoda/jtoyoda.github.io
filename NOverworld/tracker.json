@@ -1,5 +1,5 @@
 {
-	"tracker_capture_item" : {
+	"NOverworld_item_grid" : {
 		"type" : "container",
 		"content" : {
 			"type" : "itemgrid",
@@ -11,6 +11,19 @@
 				[ "mark", "sigil" ],
 				[ "adamant", "tnt", "crown", "crystal", "herb" ],
 				[ "garland", "ruby", "tail", "slab", "bottle" ]
+			]
+		}
+	},
+	"NOverworld_flag_grid" : {
+		"type" : "container",
+		"content" : {
+			"type" : "itemgrid",
+			"h_alignment" : "center",
+			"item_margin" : "1,2",
+			"rows" : [
+				[ "npcsAreIncentive", "iceCaveIsIncentive", "ordealsIsIncentive", "marshIsIncentive", "titansTroveIsIncentive" ],
+				[ "fetchQuestsAreIncentive", "earthIsIncentive", "volcanoIsIncentive", "seaIsIncentive", "skyIsIncentive" ],
+				[ "loose", "coneriaLockedIsIncentive", "marshLockedIsIncentive", "cardiaIsIncentive" ]
 			]
 		}
 	},
@@ -32,7 +45,7 @@
 							"dock" : "top",
 							"content" : {
 								"type" : "layout",
-								"key" : "tracker_capture_item"
+								"key" : "NOverworld_item_grid"
 							}
 						},
 						{
@@ -50,7 +63,7 @@
 							"dock" : "top",
 							"content" : {
 								"type" : "layout",
-								"key" : "shared_flags_grid"
+								"key" : "NOverworld_flag_grid"
 							}
 						},
 						{
@@ -102,7 +115,7 @@
 								"type" : "layout",
 								"h_alignment" : "center",
 								"v_alignment" : "center",
-								"key" : "tracker_capture_item"
+								"key" : "NOverworld_item_grid"
 							}
 						},
 						{
@@ -126,7 +139,7 @@
 								"type" : "layout",
 								"h_alignment" : "center",
 								"v_alignment" : "center",
-								"key" : "shared_flags_grid"
+								"key" : "NOverworld_flag_grid"
 							}
 						},
 						{
