@@ -34,10 +34,8 @@
                     ]
                 },
                 {
-                    "name": "NOverworld Map Tracker",
+                    "name": "NOverworld Shard Hunt",
                     "flags": [
-                        "map",
-                        "pins",
                         "autotracker"
                     ]
                 },
@@ -58,8 +56,10 @@
                     ]
                 },
                 {
-                    "name": "NOverworld Shard Hunt",
+                    "name": "NOverworld Map Tracker",
                     "flags": [
+                        "map",
+                        "pins",
                         "autotracker"
                     ]
                 },
