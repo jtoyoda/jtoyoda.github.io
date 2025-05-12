@@ -334,7 +334,7 @@
 			},
 			{
 				"name" : "I: Ice Cave",
-				"access_rules" : [ "canoe", "floater,oxyale,chime" ],
+				"access_rules" : [ "canoe", "sigil,oxyale,chime" ],
 				"sections" : [
 					{
 						"name" : "I: Ice Cave Incentive",
@@ -353,7 +353,7 @@
 			},
 			{
 				"name" : "I: Volcano",
-				"access_rules" : [ "canoe", "floater,chime,oxyale"],
+				"access_rules" : [ "canoe", "sigil,chime,oxyale"],
 				"sections" : [
 					{
 						"name" : "I: Fire Orb",
@@ -470,7 +470,7 @@
 		"children" : [
 			{
 				"name" : "I: Lefein",
-				"access_rules" : [ "floater" ],
+				"access_rules" : [ "sigil" ],
 				"sections" : [
 					{
 						"name" : "I: Incentive",
@@ -489,7 +489,7 @@
 			},
 			{
 				"name" : "I: Gaia",
-				"access_rules" : [ "floater" ],
+				"access_rules" : [ "sigil" ],
 				"sections" : [
 					{
 						"name" : "I: Fairy",
@@ -508,7 +508,7 @@
 			},
 			{
 				"name" : "I: Sky Palace",
-				"access_rules" : [ "floater,oxyale,canoe,cube", "floater,chime,cube" ],
+				"access_rules" : [ "sigil,oxyale,canoe,cube", "sigil,chime,cube" ],
 				"sections" : [
 					{
 						"name" : "I: Air Orb",
@@ -538,7 +538,7 @@
 		"children" : [
 			{
 				"name" : "I: Waterfall",
-				"access_rules" : [ "floater" ],
+				"access_rules" : [ "sigil" ],
 				"sections" : [
 					{
 						"name" : "I: Robot",
@@ -557,7 +557,7 @@
 			},
 			{
 				"name" : "I: Sea Shrine",
-				"access_rules" : [ "floater,oxyale,canoe", "floater,chime" ],
+				"access_rules" : [ "sigil,oxyale,canoe", "sigil,chime" ],
 				"sections" : [
 					{
 						"name" : "I: Water Orb",
@@ -575,7 +575,7 @@
 			},
 			{
 				"name" : "I: Sea Incentive",
-				"access_rules" : [ "floater,oxyale,canoe", "floater,chime" ],
+				"access_rules" : [ "sigil,oxyale,canoe", "sigil,chime" ],
 				"sections" : [
 					{
 						"name" : "I: Sea Incentive",
