@@ -4,7 +4,7 @@ Final Fantasy 1 Randomizer Tracker
 Tracker has 6 variants
 - Map Tracker
 - NOverworld Map Tracker
-- No Map, Items only
+- No Map, Items/Locations only
 
 -- All 3 above have a Shard tracker option
 
