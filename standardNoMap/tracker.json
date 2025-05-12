@@ -16,6 +16,8 @@
     },
     "tracker_default": {
         "type": "container",
+        "width": 383,
+        "height": 250,
         "background": "#5f6393",
         "content": {
             "type": "array",
