@@ -19,6 +19,9 @@
         "shardHunt": {
             "display_name": "Shard Hunt Map Tracker"
         },
+        "NOverworldNoMap": {
+            "display_name": "NOverworld No Map"
+        },
         "NOverworld":{
             "display_name": "NOverworld Map Tracker"
         },
