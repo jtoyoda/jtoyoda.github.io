@@ -54,7 +54,7 @@
                         "type": "layout",
                         "h_alignment": "center",
                         "v_alignment": "center",
-                        "key": "shared_item_grid"
+                        "key": "NOverworld_item_grid"
                     }
                 },
                 {
