@@ -10,23 +10,23 @@
         "standardNoMap": {
             "display_name": "Standard Tracker"
         },
-        "standard": {
-            "display_name": "Standard Map Tracker"
-        },
         "shardHuntNoMap": {
             "display_name": "Shard Hunt Tracker"
-        },
-        "shardHunt": {
-            "display_name": "Shard Hunt Map Tracker"
         },
         "NOverworldNoMap": {
             "display_name": "NOverworld"
         },
-        "NOverworld": {
-            "display_name": "NOverworld Map Tracker"
-        },
         "shardHuntNOverworldNoMap": {
             "display_name": "NOverworld Shard Hunt"
+        },
+        "standard": {
+            "display_name": "Standard Map Tracker"
+        },
+        "shardHunt": {
+            "display_name": "Shard Hunt Map Tracker"
+        },
+        "NOverworld": {
+            "display_name": "NOverworld Map Tracker"
         },
         "shardHuntNOverworld": {
             "display_name": "NOverworld Shard Hunt Map Tracker"
