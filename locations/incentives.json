@@ -452,13 +452,17 @@
 			{
 				"name" : "I: Bahamut's Cave",
 				"access_rules" : [
-					"airship",
-					"cardiaDock,ship,canal"
+					"airship"
 				],
 				"sections" : [
 					{
 						"name" : "I: Bahamut",
-						"access_rules" : [ "tail" ],
+						"access_rules" : [
+							"tail",
+							"cardiaDock",
+							"canal",
+							"ship"
+						],
 						"hosted_item" : "bahamut"
 					},
 					{
