@@ -458,7 +458,9 @@
 				"sections" : [
 					{
 						"name" : "I: Bahamut",
-						"access_rules" : [ "tail" ],
+						"access_rules" : [
+							"tail"
+						],
 						"hosted_item" : "bahamut"
 					},
 					{
@@ -479,8 +481,7 @@
 {
 				"name" : "I: Cardia Incentive",
 				"access_rules" : [
-					"airship",
-					"cardiaDock,ship,canal"
+					"airship"
 				],
 				"sections" : [
 					{

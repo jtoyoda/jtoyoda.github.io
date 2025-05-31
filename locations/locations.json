@@ -706,7 +706,7 @@
                 "sections": [
                     {
                         "name": "Chests",
-						"access_rules": [],
+			"access_rules": [],
                         "item_count": 3,
                     }
                 ],
