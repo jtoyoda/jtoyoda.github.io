@@ -483,8 +483,7 @@
 {
 				"name" : "I: Cardia Incentive",
 				"access_rules" : [
-					"airship",
-					"cardiaDock,ship,canal"
+					"airship"
 				],
 				"sections" : [
 					{
