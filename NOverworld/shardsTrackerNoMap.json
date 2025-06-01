@@ -39,7 +39,7 @@
     "tracker_default": {
         "type": "container",
         "background": "#5f6393",
-        "width": 667,
+        "width": 507,
         "height": 227,
         "content": {
             "type": "array",
