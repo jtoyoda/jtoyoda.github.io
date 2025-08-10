@@ -1,4 +1,10 @@
 [
+	{
+		"name" : "AirBoat",
+		"Type" : "toggle",
+		"img" : "images/flags/airBoat.png",
+		"codes": "airBoat"
+	},
     {
         "name" : "Open Progression",
         "type" : "progressive",
@@ -253,3 +259,4 @@
         ]
     }
 ]
+
