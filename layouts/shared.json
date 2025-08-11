@@ -55,7 +55,7 @@
 			"v_alignment": "center",
 			"item_margin": "1,2",
 			"rows": [
-				[ "extendedOpen", "airBoatOFF" ],
+				[ "extendedOpen", "airBoat" ],
 				[ "northernDocks", "luffyDock" ],
 				[ "cardiaDock", "lefeinRiver" ],
 				[ "lefeinBridge", "gaiaMountain" ],
@@ -80,5 +80,6 @@
 		}
 	}
 }
+
 
 
