@@ -119,7 +119,7 @@ function updateFloater(segment)
             print(item.Name, floater, airship, item.CurrentStage)
         end
 
-        if airboat then
+        if airboat.CurrentStage == 1 then
             if ship > 0 and floater > 0 then
                 item.CurrentStage = 2
             elseif floater > 0 then
@@ -127,7 +127,7 @@ function updateFloater(segment)
             elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
                 item.CurrentStage = 0
             end
-        else
+        elseif airboat.CurrentStage == 0 then
             if airship > 0 then
                 item.CurrentStage = 2
             elseif floater > 0 then
