@@ -15,7 +15,7 @@
 					},
 					{
 						"name" : "I: King",
-						"access_rules" : [ "earlyKing" ],
+						"access_rules" : [ "earlyKing", "garland" ],
 						"visibility_rules" : [ "npcsAreIncentive" ],
 						"hosted_item" : "king"
 					},
@@ -691,6 +691,7 @@
 		]
 	}
 ]
+
 
 
 
