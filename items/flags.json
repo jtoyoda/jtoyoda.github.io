@@ -5,11 +5,11 @@
 		"stages" : [
 			{
 				"img" : "images/flags/airBoatOFF.png",
-				"codes": "airBoatOFF",
+				"codes": "airBoatOFF"
 			},
 			{
 				"img" : "images/flags/airBoat.png",
-				"codes": "airBoat",
+				"codes": "airBoat"
 			}
 	},
     {
@@ -266,6 +266,7 @@
         ]
     }
 ]
+
 
 
 
