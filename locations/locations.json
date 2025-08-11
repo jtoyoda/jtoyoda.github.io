@@ -20,7 +20,7 @@
                     },
                     {
                         "name": "King",
-                        "access_rules": [],
+                        "access_rules": [ "earlyKing", "garland" ],
                         "item_count": 1,
                         "hosted_item": "king"
                     },
@@ -361,7 +361,7 @@
                 "sections": [
                     {
                         "name": "Sarda",
-                        "access_rules": [],
+                        "access_rules": [ "earlySarda" ],
                         "item_count": 1,
                         "hosted_item": "sarda"
                     }
@@ -509,7 +509,7 @@
                 "sections": [
                     {
                         "name": "Sages",
-                        "access_rules": [],
+                        "access_rules": [ "earlySage", "earthorbislit"],
                         "item_count": 1,
                         "hosted_item": "sages"
                     }
@@ -778,7 +778,7 @@
                 "sections": [
                     {
                         "name": "Incentive",
-                        "access_rules": [],
+                        "access_rules": [ "earlyOrdeals", "crown" ],
                         "item_count": 1,
                         "hosted_item": "ordeals"
                     },
@@ -1060,4 +1060,5 @@
         ]
     }
 ]
+
 
