@@ -136,7 +136,8 @@
 					"ship",
 					"airship",
 					"extendedOpen,canoe",
-					"openProgression,canoe"
+					"openProgression,canoe",
+					"bridgeToLefein"
 				],
 				"sections" : [
 					{
@@ -185,7 +186,8 @@
 					"ship",
 					"airship",
 					"extendedOpen,canoe",
-					"openProgression,canoe"
+					"openProgression,canoe",
+					"bridgeToLefein"
 				],
 				"sections" : [
 					{
@@ -689,3 +691,4 @@
 		]
 	}
 ]
+
