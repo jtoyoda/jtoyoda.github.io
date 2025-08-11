@@ -113,14 +113,11 @@ function updateFloater(segment)
     if item then
         local floater = ReadU8(segment, 0x602B)
         local airship = ReadU8(segment, 0x6004)
-        local airboat = ReadU8(segment, 0x0080)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, floater, airship, item.CurrentStage)
         end
 
-        if airboat > 0 then
-            item.CurrentStage = 2
-        elseif airship > 0 then
+        if airship > 0 then
             item.CurrentStage = 2
         elseif floater > 0 then
             item.CurrentStage = 1
