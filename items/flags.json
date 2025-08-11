@@ -11,6 +11,7 @@
 				"img" : "images/flags/airBoat.png",
 				"codes": "airBoat"
 			}
+		]
 	},
     {
         "name" : "Open Progression",
@@ -266,6 +267,7 @@
         ]
     }
 ]
+
 
 
 
