@@ -111,18 +111,30 @@ end
 function updateFloater(segment)
     local item = Tracker:FindObjectForCode("floater")
     if item then
+        local airboat = Tracker:FindObjectForCode("airBoat")
+        local ship = ReadU8(segment, 0x6000)
         local floater = ReadU8(segment, 0x602B)
         local airship = ReadU8(segment, 0x6004)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, floater, airship, item.CurrentStage)
         end
 
-        if airship > 0 then
-            item.CurrentStage = 2
-        elseif floater > 0 then
-            item.CurrentStage = 1
-        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
-          item.CurrentStage = 0
+        if airboat = true then
+            if ship > 0 and floater > 0 then
+                item.CurrentStage = 2
+            elseif floater > 0 then
+                item.CurrentStage = 1
+            elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
+                item.CurrentStage = 0
+            end
+        elseif airboat = false then
+            if airship > 0 then
+                item.CurrentStage = 2
+            elseif floater > 0 then
+                item.CurrentStage = 1
+            elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
+                item.CurrentStage = 0
+            end
         end
     end
 end 
