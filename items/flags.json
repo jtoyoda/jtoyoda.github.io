@@ -4,12 +4,8 @@
 		"type" : "progressive",
 		"stages" : [
 			{
-				"img" : "images/flags/airBoatOFF.png",
-				"codes": "airBoat,airBoatOFF"
-			},
-			{
 				"img" : "images/flags/airBoat.png",
-				"codes": "airBoat,airBoatON"
+				"codes": "airBoat"
 			}
 		]
 	},
@@ -267,6 +263,7 @@
         ]
     }
 ]
+
 
 
 
