@@ -80,6 +80,14 @@ local skyIncentive = Tracker:FindObjectForCode("skyIsIncentive")
 skyIncentive.Active = true
 local coneriaLockedIncentive = Tracker:FindObjectForCode("coneriaLockedIsIncentive")
 coneriaLockedIncentive.Active = true
+local earlyKing = Tracker:FindObjectForCode("earlyKing")
+earlyKing.active = true
+local earlySarda = Tracker:FindObjectForCode("earlySarda")
+earlySarda.active = true
+local earlySage = Tracker:FindObjectForCode("earlySage")
+earlySage.active = true
+local earlyOrdeals = Tracker:FindObjectForCode("earlyOrdeals")
+earlyOrdeals.active = true
 
 
 Tracker.DisplayAllLocations = PREFERENCE_DISPLAY_ALL_LOCATIONS
