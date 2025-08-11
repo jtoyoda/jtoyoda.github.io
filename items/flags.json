@@ -1,5 +1,29 @@
 [
 	{
+		"name" : "Early King",
+		"type" : "toggle",
+		"img" : "images/locations/king.png",
+		"codes" : "earlyKing"
+	},
+	{
+		"name" : "Early Sarda",
+		"type" : "toggle",
+		"img" : "images/locations/sarda.png",
+		"codes" : "earlySarda"
+	},
+	{
+		"name" : "Early Sage",
+		"type" : "toggle",
+		"img" : "images/locations/sage.png",
+		"codes" : "earlySage"
+	},
+	{
+		"name" : "Early Ordeals",
+		"type" : "toggle",
+		"img" : "images/locations/ordeals.png",
+		"codes" : "earlyOrdeals"
+	},
+	{
 		"name" : "AirBoat",
 		"type" : "progressive",
 		"stages" : [
@@ -263,6 +287,7 @@
         ]
     }
 ]
+
 
 
 
