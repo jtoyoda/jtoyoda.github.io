@@ -509,7 +509,7 @@
                 "sections": [
                     {
                         "name": "Sages",
-                        "access_rules": [ "earlySage", "earthorbislit"],
+                        "access_rules": [ "earlySage", "earthorblit"],
                         "item_count": 1,
                         "hosted_item": "sages"
                     }
@@ -1060,5 +1060,6 @@
         ]
     }
 ]
+
 
 
