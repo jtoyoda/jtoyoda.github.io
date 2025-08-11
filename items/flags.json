@@ -1,9 +1,16 @@
 [
 	{
 		"name" : "AirBoat",
-		"type" : "toggle",
-		"img" : "images/flags/airBoat.png",
-		"codes": "airBoat"
+		"type" : "progressive",
+		"stages" : [
+			{
+				"img" : "images/flags/airBoatOFF.png",
+				"codes": "airBoatOFF",
+			},
+			{
+				"img" : "images/flags/airBoat.png",
+				"codes": "airBoat",
+			}
 	},
     {
         "name" : "Open Progression",
@@ -259,5 +266,6 @@
         ]
     }
 ]
+
 
 
