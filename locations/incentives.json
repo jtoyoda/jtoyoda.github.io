@@ -15,7 +15,7 @@
 					},
 					{
 						"name" : "I: King",
-						"access_rules" : [],
+						"access_rules" : [ "earlyKing" ],
 						"visibility_rules" : [ "npcsAreIncentive" ],
 						"hosted_item" : "king"
 					},
@@ -251,7 +251,7 @@
 				"sections" : [
 					{
 						"name" : "I: Sarda",
-						"access_rules" : [],
+						"access_rules" : [ "earlySarda" ],
 						"visibility_rules" : [ "npcsAreIncentive" ],
 						"hosted_item" : "sarda"
 					}
@@ -355,7 +355,7 @@
 				"sections" : [
 					{
 						"name" : "I: Sages",
-						"access_rules" : [],
+						"access_rules" : [ "earlySage", "earthorblit" ],
 						"visibility_rules" : [ "npcsAreIncentive" ],
 						"hosted_item" : "sages"
 					}
@@ -517,7 +517,7 @@
 				"sections" : [
 					{
 						"name" : "I: Incentive",
-						"access_rules" : [],
+						"access_rules" : [ "earlyOrdeals", "crown" ],
 						"visibility_rules" : [ "ordealsIsIncentive" ],
 						"hosted_item" : "ordeals"
 					}
@@ -691,5 +691,6 @@
 		]
 	}
 ]
+
 
 
