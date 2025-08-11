@@ -1,7 +1,7 @@
 [
 	{
 		"name" : "AirBoat",
-		"Type" : "toggle",
+		"type" : "toggle",
 		"img" : "images/flags/airBoat.png",
 		"codes": "airBoat"
 	},
@@ -259,4 +259,5 @@
         ]
     }
 ]
+
 
