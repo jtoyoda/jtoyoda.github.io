@@ -1,5 +1,10 @@
 [
 	{
+		"name" : "Vampire",
+		"type" : "toggle",
+		"codes" : "vampire"
+	},
+	{
 		"name" : "Early King",
 		"type" : "toggle",
 		"img" : "images/locations/king.png",
@@ -287,6 +292,7 @@
         ]
     }
 ]
+
 
 
 
