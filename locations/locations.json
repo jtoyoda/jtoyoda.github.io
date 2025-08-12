@@ -361,7 +361,7 @@
                 "sections": [
                     {
                         "name": "Sarda",
-                        "access_rules": [ "earlySarda" ],
+                        "access_rules": [ "earlySarda", "vampire" ],
                         "item_count": 1,
                         "hosted_item": "sarda"
                     }
@@ -1060,6 +1060,7 @@
         ]
     }
 ]
+
 
 
 
