@@ -484,7 +484,7 @@ function updateLocationsFromMemorySegmentCorridor(segment)
       updateToggleItemFromByteAndFlag(segment, "elfprince", 0x6206, 0x02)
       updateToggleItemFromByteAndFlag(segment, "matoya", 0x620A, 0x02)
       updateToggleItemFromByteAndFlag(segment, "vampire", 0x620C, 0x02)
-      updateToggleItemFromByteAndFlag(segment, "shopItem", 0x38461, 0x02)
+      updateToggleItemFromByteAndFlag(segment, "shopItem", 0x38461, 0x04)
     end
 
     if AUTOTRACKER_ENABLE_LOCATION_TRACKING then 
