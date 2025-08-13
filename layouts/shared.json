@@ -55,7 +55,7 @@
 			"v_alignment": "center",
 			"item_margin": "1,2",
 			"rows": [
-				[ "extendedOpen", "airBoat" ],
+				[ "extendedOpen", "airBoat", "vampire" ],
 				[ "northernDocks", "luffyDock", "earlyKing" ],
 				[ "cardiaDock", "lefeinRiver", "earlySarda" ],
 				[ "lefeinBridge", "gaiaMountain", "earlySage" ],
@@ -80,6 +80,7 @@
 		}
 	}
 }
+
 
 
 
