@@ -15,7 +15,7 @@ print("")
 
 U8_READ_CACHE = 0
 U8_READ_CACHE_ADDRESS = 0
-originalBahamut = "-1"
+
 
 function autotracker_started()
     print("Started Tracking")
@@ -186,6 +186,7 @@ function updateSlab(segment)
 end
 
 function updateTail(segment)
+    originalBahamut = "-1"
     local item = Tracker:FindObjectForCode("tail")
     if item then
         local tail = ReadU8(segment, 0x602D)
@@ -484,7 +485,7 @@ function updateLocationsFromMemorySegmentCorridor(segment)
       updateToggleItemFromByteAndFlag(segment, "elfprince", 0x6206, 0x02)
       updateToggleItemFromByteAndFlag(segment, "matoya", 0x620A, 0x02)
       updateToggleItemFromByteAndFlag(segment, "vampire", 0x620C, 0x02)
-      updateToggleItemFromByteAndFlag(segment, "shopItem", 0x838E, 0x02)
+      --updateToggleItemFromByteAndFlag(segment, "shopItem", 0x838E, 0x02)
     end
 
     if AUTOTRACKER_ENABLE_LOCATION_TRACKING then 
