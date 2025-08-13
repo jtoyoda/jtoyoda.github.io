@@ -451,7 +451,7 @@ function updateItemsFromMemorySegment(segment)
 
     end
     updateLocationsFromMemorySegmentCorridor(segment)
-    if Tracker.ActiveVariantUID == "shardHunt" or Tracker.ActiveVariantUID == "shardHuntNoMap" or Tracker.ActiveVariantUID == "shardHuntNOverworld" then
+    if Tracker.ActiveVariantUID == "shardHunt" or Tracker.ActiveVariantUID == "shardHuntNoMap" or Tracker.ActiveVariantUID == "shardHuntNOverworld" or Tracker.ActiveVariantUID == "shardHuntNOverworldNoMap" then
       updateShardsFromMemorySegment(segment)
     end
 end
@@ -483,7 +483,7 @@ function updateLocationsFromMemorySegmentCorridor(segment)
       updateToggleItemFromByteAndFlag(segment, "astos", 0x6207, 0x02)
       updateToggleItemFromByteAndFlag(segment, "elfprince", 0x6206, 0x02)
       updateToggleItemFromByteAndFlag(segment, "matoya", 0x620A, 0x02)
-      updateToggleItemFromByteAndFlag(segment, "vampire", 0x6212, 0x02)
+      updateToggleItemFromByteAndFlag(segment, "vampire", 0x620C, 0x02)
     end
 
     if AUTOTRACKER_ENABLE_LOCATION_TRACKING then 
