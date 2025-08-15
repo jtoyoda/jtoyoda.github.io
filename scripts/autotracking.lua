@@ -15,7 +15,7 @@ print("")
 
 U8_READ_CACHE = 0
 U8_READ_CACHE_ADDRESS = 0
-originalBahamut = "-1"
+
 
 function autotracker_started()
     print("Started Tracking")
@@ -111,18 +111,30 @@ end
 function updateFloater(segment)
     local item = Tracker:FindObjectForCode("floater")
     if item then
+        local airboat = Tracker:FindObjectForCode("airBoat")
+        local ship = ReadU8(segment, 0x6000)
         local floater = ReadU8(segment, 0x602B)
         local airship = ReadU8(segment, 0x6004)
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING then
             print(item.Name, floater, airship, item.CurrentStage)
         end
 
-        if airship > 0 then
-            item.CurrentStage = 2
-        elseif floater > 0 then
-            item.CurrentStage = 1
-        elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
-          item.CurrentStage = 0
+        if airboat.CurrentStage == 1 then
+            if ship > 0 and floater > 0 then
+                item.CurrentStage = 2
+            elseif floater > 0 then
+                item.CurrentStage = 1
+            elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
+                item.CurrentStage = 0
+            end
+        elseif airboat.CurrentStage == 0 then
+            if airship > 0 then
+                item.CurrentStage = 2
+            elseif floater > 0 then
+                item.CurrentStage = 1
+            elseif AUTOTRACKER_ENABLE_SETTING_LOCATIONS_TO_FALSE then
+                item.CurrentStage = 0
+            end
         end
     end
 end 
@@ -174,6 +186,7 @@ function updateSlab(segment)
 end
 
 function updateTail(segment)
+    originalBahamut = "-1"
     local item = Tracker:FindObjectForCode("tail")
     if item then
         local tail = ReadU8(segment, 0x602D)
@@ -439,7 +452,7 @@ function updateItemsFromMemorySegment(segment)
 
     end
     updateLocationsFromMemorySegmentCorridor(segment)
-    if Tracker.ActiveVariantUID == "shardHunt" or Tracker.ActiveVariantUID == "shardHuntNoMap" or Tracker.ActiveVariantUID == "shardHuntNOverworld" then
+    if Tracker.ActiveVariantUID == "shardHunt" or Tracker.ActiveVariantUID == "shardHuntNoMap" or Tracker.ActiveVariantUID == "shardHuntNOverworld" or Tracker.ActiveVariantUID == "shardHuntNOverworldNoMap" then
       updateShardsFromMemorySegment(segment)
     end
 end
@@ -471,6 +484,8 @@ function updateLocationsFromMemorySegmentCorridor(segment)
       updateToggleItemFromByteAndFlag(segment, "astos", 0x6207, 0x02)
       updateToggleItemFromByteAndFlag(segment, "elfprince", 0x6206, 0x02)
       updateToggleItemFromByteAndFlag(segment, "matoya", 0x620A, 0x02)
+      updateToggleItemFromByteAndFlag(segment, "vampire", 0x620C, 0x02)
+      --updateToggleItemFromByteAndFlag(segment, "shopItem", 0x838E, 0x02)
     end
 
     if AUTOTRACKER_ENABLE_LOCATION_TRACKING then 

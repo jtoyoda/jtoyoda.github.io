@@ -42,7 +42,7 @@ elseif Tracker.ActiveVariantUID == "shardHuntNOverworld" then
   shardsRequired.CurrentStage = 8
 elseif Tracker.ActiveVariantUID == "shardHuntNOverworldNoMap" then
   Tracker:AddLayouts("NOverworld/shardsTrackerNoMap.json")
-  Tracker:AddLayouts("NOverworld/broadcastShards.json")
+  Tracker:AddLayouts("NOverworld/broadcastShardsNoMap.json")
   local shardsRequired = Tracker:FindObjectForCode("shardsRequired")
   shardsRequired.CurrentStage = 8
 elseif Tracker.ActiveVariantUID == "NOverworld" then
@@ -50,7 +50,7 @@ elseif Tracker.ActiveVariantUID == "NOverworld" then
   Tracker:AddLayouts("NOverworld/broadcast.json")
 elseif Tracker.ActiveVariantUID == "NOverworldNoMap" then
   Tracker:AddLayouts("NOverworld/trackerNoMap.json")
-  Tracker:AddLayouts("NOverworld/broadcast.json")
+  Tracker:AddLayouts("NOverworld/broadcastNoMap.json")
 elseif Tracker.ActiveVariantUID == "standardNoMap" then
   Tracker:AddLayouts("standardNoMap/tracker.json")
   Tracker:AddLayouts("standardNoMap/broadcastNoMap.json")
@@ -80,6 +80,14 @@ local skyIncentive = Tracker:FindObjectForCode("skyIsIncentive")
 skyIncentive.Active = true
 local coneriaLockedIncentive = Tracker:FindObjectForCode("coneriaLockedIsIncentive")
 coneriaLockedIncentive.Active = true
+local earlyKing = Tracker:FindObjectForCode("earlyKing")
+earlyKing.Active = true
+local earlySarda = Tracker:FindObjectForCode("earlySarda")
+earlySarda.Active = true
+local earlySage = Tracker:FindObjectForCode("earlySage")
+earlySage.Active = true
+local earlyOrdeals = Tracker:FindObjectForCode("earlyOrdeals")
+earlyOrdeals.Active = true
 
 
 Tracker.DisplayAllLocations = PREFERENCE_DISPLAY_ALL_LOCATIONS

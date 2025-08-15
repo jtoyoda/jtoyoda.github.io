@@ -20,7 +20,7 @@
                     },
                     {
                         "name": "King",
-                        "access_rules": [],
+                        "access_rules": [ "earlyKing", "garland" ],
                         "item_count": 1,
                         "hosted_item": "king"
                     },
@@ -191,7 +191,8 @@
                     "ship",
                     "airship",
                     "extendedOpen,canoe",
-                    "openProgression,canoe"
+                    "openProgression,canoe",
+					"lefeinBridge"
                 ],
                 "sections": [
                     {
@@ -250,7 +251,8 @@
                     "ship",
                     "airship",
                     "extendedOpen,canoe",
-                    "openProgression,canoe"
+                    "openProgression,canoe",
+					"lefeinBridge"
                 ],
                 "sections": [
                     {
@@ -359,7 +361,7 @@
                 "sections": [
                     {
                         "name": "Sarda",
-                        "access_rules": [],
+                        "access_rules": [ "earlySarda", "vampire" ],
                         "item_count": 1,
                         "hosted_item": "sarda"
                     }
@@ -507,7 +509,7 @@
                 "sections": [
                     {
                         "name": "Sages",
-                        "access_rules": [],
+                        "access_rules": [ "earlySage", "earthorblit"],
                         "item_count": 1,
                         "hosted_item": "sages"
                     }
@@ -776,7 +778,7 @@
                 "sections": [
                     {
                         "name": "Incentive",
-                        "access_rules": [],
+                        "access_rules": [ "earlyOrdeals", "crown" ],
                         "item_count": 1,
                         "hosted_item": "ordeals"
                     },
@@ -1058,3 +1060,7 @@
         ]
     }
 ]
+
+
+
+

@@ -55,11 +55,11 @@
 			"v_alignment": "center",
 			"item_margin": "1,2",
 			"rows": [
-				[ "extendedOpen" ],
-				[ "northernDocks", "luffyDock" ],
-				[ "cardiaDock", "lefeinRiver" ],
-				[ "lefeinBridge", "gaiaMountain" ],
-				[ "hwyOrdeals", "melmondRiver" ]
+				[ "extendedOpen", "airBoat", ],
+				[ "northernDocks", "luffyDock", "earlyKing" ],
+				[ "cardiaDock", "lefeinRiver", "earlySarda" ],
+				[ "lefeinBridge", "gaiaMountain", "earlySage" ],
+				[ "hwyOrdeals", "melmondRiver", "earlyOrdeals" ]
 			]
 		}
 	},
@@ -80,3 +80,9 @@
 		}
 	}
 }
+
+
+
+
+
+
