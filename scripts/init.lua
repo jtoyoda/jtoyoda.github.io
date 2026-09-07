@@ -92,7 +92,21 @@ earlyOrdeals.Active = true
 
 Tracker.DisplayAllLocations = PREFERENCE_DISPLAY_ALL_LOCATIONS
 
-if _VERSION == "Lua 5.3" then
+local function is_v3_or_higher()
+    if ScriptHost and ScriptHost.GetType then
+        local success, version_str = pcall(function()
+            return ScriptHost:GetType().Assembly:GetName().Version:ToString()
+        end)
+
+        if success and version_str then
+            local major = tonumber(version_str:match("^(%d+)"))
+            return major ~= nil and major >= 3
+        end
+    end
+    return false
+end
+
+if is_v3_or_higher() or _VERSION == "Lua 5.3" then
   print("Your tracker version supports autotracking!")
   ScriptHost:LoadScript("scripts/autotracking.lua")
 else
